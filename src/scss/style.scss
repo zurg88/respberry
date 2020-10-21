@@ -1,0 +1,19 @@
+@import './reset';
+@import './vars';
+@import './mixins';
+@import './main-header';
+@import '../fonts/poppins/poppins.css';
+
+
+.wrapper {
+	width: 1140px;
+	margin: 0 auto;
+	font-family: Poppins;
+}
+
+.show-element {
+	display: block;
+	opacity: 1;
+}
+
+

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Light'), local('Poppins-Light'), url(b1352df4951d67ff45bda41234871be1.woff2) format('woff2'), url(05c7df2962079e206fe7178086fcf274.woff) format('woff'), url(e1aeb8eccf1346649f0179d9b06fc8d5.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(87fcf9bb6a9ccb172daf033c8c665762.woff2) format('woff2'), url(7ce8abe5bbcacb558e4ce657abbf7d88.woff) format('woff'), url(7fb0aed893a3ef7b754a9e2a72cff97b.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Poppins-BoldSemiBold'), local('Poppins-SemiBold'), url(09c7d5a24d0ed661e4afa8636fb160d1.woff2) format('woff2'), url(7acd9d151c5e18ffebcbf34976274781.woff) format('woff'), url(89dc8c3f13c763e9540c36ce5aef42e7.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Thin'), local('Poppins-Thin'), url(268cab18feaccc3c1c6175864d34f812.woff2) format('woff2'), url(58c1e35d1bf71e9b3df93cae37718887.woff) format('woff'), url(edb3acc06a942d3aa14c3e56fee7bf9c.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Italic'), local('Poppins-Italic'), url(364e92a4cdb4295874b63b7f676a3ee1.woff2) format('woff2'), url(0c8c7ab3914752e4c3a3d1dda0c71610.woff) format('woff'), url(370257b0747537d3f794aedf92d7a59e.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Medium Italic'), local('Poppins-MediumItalic'), url(cc6721942d42b99318c0a53d00388646.woff2) format('woff2'), url(b34b27870e748be10d8ce99bf6b797b6.woff) format('woff'), url(85163bac6c94be854be203e284dafde0.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins ExtraLight Italic'), local('Poppins-ExtraLightItalic'), url(c7b2f647fdbbf1c0bcb0f90222fba2ab.woff2) format('woff2'), url(16ebd046858c01be8d8cacf758d87252.woff) format('woff'), url(ee0ff5c1a663e4b4e11d9e00a71e3fea.ttf) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins ExtraBold Italic'), local('Poppins-ExtraBoldItalic'), url(cc2e6180763e4b9611552c8710b7ff45.woff2) format('woff2'), url(5372ac8ccc1920bd0337fc11621058b6.woff) format('woff'), url(1f6267f2e5ba8331c25d1ef80b606ddc.ttf) format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'), url(cc48887dff96dabab115d782599c270b.woff2) format('woff2'), url(4926929c6fda3129d5f3ada79c93407a.woff) format('woff'), url(22f99022f3fd6d9651d5226c7c881406.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Light Italic'), local('Poppins-LightItalic'), url(5b1cb6dfde7e3d358453f65d821bd9ce.woff2) format('woff2'), url(08acbe3f023bd3c6b79ae33a718d81d0.woff) format('woff'), url(6104ea6196cd4a49dfd3b639d374b33c.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Black'), local('Poppins-Black'), url(23d926ac0ee0ceef67344b57326db20d.woff2) format('woff2'), url(2e1a0b3627542b7f7a9e2d4e9d14d5de.woff) format('woff'), url(656939d76c7d9087e11b29ba997b6b0d.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Thin Italic'), local('Poppins-ThinItalic'), url(bb940a4502685eca29d5c651a2af6b3d.woff2) format('woff2'), url(044916360552fedd05fc8e56889e83e4.woff) format('woff'), url(402ee0837ba41602c8d77703b736e209.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Poppins-SemiBoldMedium'), local('Poppins-Medium'), url(871297aec49ce317fac6e22541cc57ab.woff2) format('woff2'), url(6981105294304c9d6b75e6ecb982992b.woff) format('woff'), url(3dba38ecfb74407da3e3f9e1438dad03.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins ExtraLight'), local('Poppins-ExtraLight'), url(2ccf3e77897827c13a3882c7e196a521.woff2) format('woff2'), url(59ec4dcd1e4257bc24566ef64773794d.woff) format('woff'), url(f5428273c99249384f1982421757d591.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'), url(13fe35dd9ec74aa1381dbb0e1b7e7e76.woff2) format('woff2'), url(8ec618b60088d56a80ae25895721cf14.woff) format('woff'), url(a088b1457f1bb144fc00fe52a4584e6d.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins SemiBold Italic'), local('Poppins-SemiBoldItalic'), url(065a50de2f7fab0fee6e8c95a3ed4322.woff2) format('woff2'), url(3695a412946292d216f08b806f99eace.woff) format('woff'), url(9707ba053739552c4654e2d224470983.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Bold'), local('Poppins-Bold'), url(f80def0252e202573b21eee7345560b8.woff2) format('woff2'), url(24051d3163f7580b5eaa374c0e388d88.woff) format('woff'), url(8ac6f63215ea3458d1fd7f97174d8fc5.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins Black Italic'), local('Poppins-BlackItalic'), url(3b0972dbc9b168a40687eae01736dd6f.woff2) format('woff2'), url(3c9c43f3d2e4417875cc0f8f882e551e.woff) format('woff'), url(65d0b749e23a9822dd415dc877709672.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+ul{margin:0;padding:0;list-style-type:none}ul li{list-style-type:none}a{text-decoration:none;color:#3a3a3a}.top-left-menu,.top-menu{display:flex;justify-content:space-between;align-items:center;flex-direction:row;text-transform:uppercase;user-select:none;position:relative}.top-left-menu{width:170px}.select-item{cursor:pointer;display:none;background-color:#3a3a3a;color:#fff;line-height:40px;padding:0 9px;text-align:center;border-bottom:1px solid #444}.left-menu-select{position:absolute;top:-9px}.left-menu-select .active{display:block;background-color:transparent;color:#3a3a3a}.left-menu-select .active,.left-menu-select:last-child{border-bottom:none}.currency-select{margin-left:50px}.wishlist{margin-left:110px}.logo{position:relative}.logo-link{font-size:18px;font-weight:800;line-height:25px}.logo-link img{height:25px}.account-menu{position:relative}.sign-in-link{border-bottom:1px solid #8b8b8b}.account-list{position:absolute;right:0;top:30px;background-color:#3a3a3a;text-align:center;display:none;opacity:0}.account-list:last-child{border-bottom:none}.account-list-item{border-bottom:1px solid #444;opacity:0;transition:all .5s}.account-list-link{display:block;min-width:200px;max-width:300px;color:#8b8b8b;line-height:50px;text-align:center;width:100%;height:100%;transition:all .5s}.account-list-link:hover{color:#fff;background-color:#444}.slash{margin:0 5px}.user-link:hover+.account-list{display:block;opacity:1}.wrapper{width:1140px;margin:0 auto;font-family:Poppins}.show-element{display:block;opacity:1}
+
