@@ -1,3 +1,7 @@
+.main-header {
+	margin-top: 25px;
+}
+
 .top-left-menu,
 .top-menu {
 	@include flex;
@@ -51,6 +55,7 @@
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 25px;
+	margin-right: 40px;
 	img {
 		height: 25px;
 	}
@@ -58,6 +63,7 @@
 
 .account-menu {
 	position: relative;
+	@include flex;
 }
 
 .sign-in-link {
@@ -67,7 +73,6 @@
 .account-list {
 	position: absolute;
 	right: 0;
-	top: 30px;
 	background-color: $dark-color;
 	text-align: center;
 	display: none;
@@ -77,13 +82,9 @@
 	}
 }
 
-.account-list-item {
-	border-bottom: 1px solid $gray-dark;
-	opacity: 0;
-	transition: all .5s;
-}
-
+.dropdown-link,
 .account-list-link {
+	opacity: 0;
 	display: block;
 	min-width: 200px;
 	max-width: 300px;
@@ -93,6 +94,7 @@
 	width: 100%;
 	height: 100%;
 	transition: all .5s;
+	border-bottom: 1px solid $gray-dark;
 	&:hover {
 		color: #fff;
 		background-color: $gray-dark;
@@ -103,9 +105,161 @@
 	margin: 0 5px;
 }
 
-.user-link:hover+.account-list {
+.user-menu-container:hover>.account-list {
 	display: block;
 	opacity: 1;
 }
 
+.nav-section {
+	margin-top: 30px;
+	border-top: 1px solid $gray-border;
+	border-bottom: 1px solid $gray-border;
+}
 
+.nav-list,
+.main-navigation {
+	@include flex;
+	font-weight: 600;
+}
+
+.main-nav {
+	width: 100%;
+	margin: 0 80px;
+	@include text-uppercase;
+	font-size: 12px;
+}
+
+.main-nav-link {
+	display: block;
+	padding: 25px 35px;
+	transition: background-color .5s;
+}
+
+.nav-list-item:hover .main-nav-link {
+	background-color: $gray-light;
+	border-bottom: 1px solid $gray-light;
+	border-top: 1px solid $gray-light;
+}
+
+.active-nav-link {
+	border-bottom: 2px solid $accent-color;
+}
+
+.cart-icon-block,
+.cart-block {
+	@include flex;
+	min-width: 50px;
+
+}
+
+.cart-icon-block {
+	width: 100%;
+}
+
+.cart-items {
+	color: $accent-color;
+}
+
+.nav-list-item {
+	position: relative;
+}
+
+.drop-down-menu {
+	position: absolute;
+	background-color: $dark-color;
+	display: none;
+}
+
+.dropdown-link {
+	padding-left: 15px;
+	text-align: left;
+}
+
+.dresses:hover>.drop-down-menu{
+	display: block;
+	opacity: 1;
+}
+
+.drop-down-mega-menu {
+	position: absolute;
+	left: -205px;
+	@include flex;
+	align-items: flex-start;
+	background-color: $dark-color;
+	color: $gray-text;
+	padding: 40px;
+	display: none;
+}
+
+.mega-menu-block {
+	margin-right: 70px;
+	transition: opacity 1s;
+	opacity: 0;
+}
+
+.sale-block {
+	margin-right: 0;
+}
+
+.mega-menu-block-title {
+	color: #fff;
+	border-bottom: 1px solid $gray-text;
+	padding-right: 165px;
+	padding-top: 2px;
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.mega-menu-link {
+	color: $gray-text;
+	text-transform: capitalize;
+	font-weight: 400;
+	display: block;
+	padding: 10px 0;
+	transition: all .5s;
+	&:hover {
+		color: $accent-color;
+	}
+}
+
+.sale {
+	position: relative;
+}
+
+.sale-info {
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	@include text-uppercase;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	z-index: 1;
+	padding-top: 45px;
+	font-weight: 800;
+	p {
+		margin: 0;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $accent-color;
+		opacity: .5;
+		z-index: -1;
+	}
+}
+
+.mega-menu:hover>.drop-down-mega-menu {
+	display: flex;
+}
+
+.mega-menu:hover .drop-down-mega-menu .mega-menu-block {
+	opacity: 1;
+}
