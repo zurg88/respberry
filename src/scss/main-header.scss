@@ -193,7 +193,6 @@
 
 .mega-menu-block {
 	margin-right: 70px;
-	transition: opacity 1s;
 	opacity: 0;
 }
 
@@ -258,8 +257,4 @@
 
 .mega-menu:hover>.drop-down-mega-menu {
 	display: flex;
-}
-
-.mega-menu:hover .drop-down-mega-menu .mega-menu-block {
-	opacity: 1;
 }
