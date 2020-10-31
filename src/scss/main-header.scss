@@ -258,3 +258,162 @@
 .mega-menu:hover>.drop-down-mega-menu {
 	display: flex;
 }
+
+.search-block {
+	position: relative;
+}
+
+.search-open {
+	line-height: 70px;
+	transition: all .5s;
+	&:hover {
+		background-color: $gray-light;
+	}
+}
+
+.search-show {
+	background-color: $gray-light;
+}
+
+.search-dropdown {
+	position: absolute;
+}
+
+.search-form {
+	@include flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $gray-light;
+	line-height: 60px;
+	padding: 0 10px;
+	width: 350px;
+	width: 0;
+	display: none;
+}
+
+.show-form {
+	display: flex;
+}
+
+.search-input {
+	line-height: 40px;
+	height: 40px;
+	width: 100%;
+	border: 1px solid #e1e1e1;
+}
+
+.search-submit {
+	height: 40px;
+	width: 40px;
+	background-color: $dark-color;
+	margin-bottom: 6px;
+}
+
+.cart-block {	
+	line-height: 70px;
+	min-width: 65px;
+	position: relative;
+}
+
+.cart-icon-block {
+	padding: 0 10px;
+	&:hover {
+		background-color: $gray-light;
+	}
+}
+
+.cart-items {
+	margin-left: 5px;
+}
+
+
+.cart-list-block {
+	position: absolute;
+	top: 72px;
+	right: 0;
+	min-width: 360px;
+	background-color: $dark-color;
+}
+
+.cart-list-block,
+.cart-list {
+	@include flex-column;
+	justify-content: flex-start;
+}
+
+.cart-list-item {
+	@include flex;
+	position: relative;
+	justify-content: start;
+	padding: 10px;
+	border-bottom: 1px solid $gray-dark;
+	transition: all .5s;
+	&:hover {
+		background-color: $gray-dark;
+	}
+}
+
+.cart-item-img {
+	background-color: #fff;
+	margin-right: 20px;
+	padding: 13px 1px;
+	@include flex;
+}
+
+.cart-item-close-icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	line-height: 11px;
+	cursor: pointer;
+}
+
+.cart-description {
+	color: $gray-text;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.product-price {
+	font-size: 14px;
+	color: #f6f6f6;
+	font-weight: 700;
+	font-family: "Oswald";
+}
+
+.total-price-title span,
+.total-price-value,
+.shipping-price,
+.product-price,
+.cart-description {
+	margin: 0;
+	line-height: 20px;
+}
+
+.total-price-block {
+	@include flex;
+	@include text-uppercase;
+	padding: 15px 10px;
+	color: #f6f6f6;
+}
+
+.total-price-title {
+	@include flex-column;
+	text-align: right;
+	padding-left: 20px;
+}
+
+.total-price {
+	padding-right: 20px;
+}
+
+.view-cart-button {
+	@include text-uppercase;
+	color: #f6f6f6;
+	background-color: $accent-color;
+	margin: 0 10px 10px 10px;
+	display: block;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 50px;
+}

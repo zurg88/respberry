@@ -15,3 +15,13 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+button {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	&:focus {
+		outline: none;
+	}
+
+}

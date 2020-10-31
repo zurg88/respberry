@@ -5,6 +5,11 @@
 	flex-direction: row;
 }
 
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
 @mixin text-uppercase {
 	text-transform: uppercase;
 }

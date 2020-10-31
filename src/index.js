@@ -7,6 +7,7 @@ import './scss/style.scss';
 
 import topSelect from './modules/top-menu-select';
 import projectAnimations from './modules/animations';
+import cart from './modules/cart';
 
 // Animations
 projectAnimations();
@@ -17,3 +18,7 @@ const topSelectCollection = document.querySelectorAll('.left-menu-select');
 topSelectCollection.forEach(item => {
 	topSelect(item);
 });
+
+// Cart
+
+cart();
