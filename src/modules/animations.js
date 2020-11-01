@@ -6,7 +6,9 @@ const projectAnimations = () => {
 		 megaMenu = document.querySelector('.mega-menu'),
 		 searchForm = document.querySelector('.search-form'),
 		 searchOpenbtn = document.querySelector('.search-open'),
-		 megaMenuBlock = document.querySelectorAll('.mega-menu-block');
+		 megaMenuBlock = document.querySelectorAll('.mega-menu-block'),
+		 cartListItems = document.querySelectorAll('.cart-list-item'),
+		 cartBlock = document.querySelector('.cart-block');
 
 
 	const toggleClass = (elem, className) =>{
@@ -62,6 +64,7 @@ const projectAnimations = () => {
 
 	userMenuAnimation(userMenuContainer, accountListItems, 25);
 	userMenuAnimation(dresses, dropdownLinks, 25);
+	userMenuAnimation(cartBlock, cartListItems, 25);
 	userMenuAnimation(megaMenu, megaMenuBlock, 100);
 
 	

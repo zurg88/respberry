@@ -326,6 +326,11 @@
 	margin-left: 5px;
 }
 
+.cart-list-block,
+.cart-list {
+	@include flex-column;
+	justify-content: flex-start;
+}
 
 .cart-list-block {
 	position: absolute;
@@ -333,12 +338,11 @@
 	right: 0;
 	min-width: 360px;
 	background-color: $dark-color;
+	display: none;
 }
 
-.cart-list-block,
-.cart-list {
-	@include flex-column;
-	justify-content: flex-start;
+.cart-block:hover .cart-list-block {
+	display: flex;
 }
 
 .cart-list-item {
@@ -348,6 +352,7 @@
 	padding: 10px;
 	border-bottom: 1px solid $gray-dark;
 	transition: all .5s;
+	opacity: 0;
 	&:hover {
 		background-color: $gray-dark;
 	}
