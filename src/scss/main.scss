@@ -1,0 +1,135 @@
+.main-content {
+	margin-top: 50px;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+  }
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-height: 550px;
+}
+
+.swiper-slide {
+	position: relative;
+}
+
+.slide-caption {
+	position: absolute;
+	margin-left: 150px;
+	@include text-uppercase;
+	color: $dark-color;
+}
+
+.caption-title {
+	margin-top: 0;
+	margin-bottom: 30px;
+	line-height: 46px;
+	font-size: 52px;
+	font-weight: 700;
+}
+
+.caption-small-text {
+	font-size: 18px;
+}
+
+.caption-btn {
+	background-color: $accent-color;
+	color: #fff;
+	border-radius: 23px;
+	width: 175px;
+	line-height: 45px;
+	border-radius: 23px;
+	box-shadow: (0px 5px 6.5px rgba(255,0,84,0.4));
+	@include text-uppercase;
+	transition: all .5s;
+	&:hover {
+		box-shadow: (0px 5px 6.5px rgba(255,0,84,0.4));
+		background-color: #ff256d;
+	}
+}
+
+.swiper-pagination-bullet {
+	background-color: #fff;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: $dark-color;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+	padding: 10px 17px;
+	border: 2px solid #7e9396;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	color: #7e9396;
+	margin: 15px;
+	right: 15px;
+}
+
+.additional-featuries-section {
+	width: 100%;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $gray-border;
+}
+
+.featuries-description {
+	margin-left: 25px;
+}
+
+.additional-featuries-item,
+.additional-featuries-list {
+	@include flex;
+	align-items: center;
+}
+
+.additional-featuries-item {
+	.featuries-description {
+		border-right: 1px solid $gray-border;
+		padding-right: 30px;
+	 }
+}
+
+.call-center .featuries-description {
+	border: none;
+	padding-right: 0;
+}
+
+.featuries-description-title {
+	font-size: 14px;
+	margin-bottom: 0;
+	margin-top: 0;
+	@include text-uppercase;
+}
+
+.featuries-description-text {
+	font-size: 13px;
+	color: $gray-text;
+}
+
+.categories-list {
+	@include flex;
+	flex-wrap: wrap;
+}
+
+.categories-list-item {
+	position: relative;
+}
+
+.category-caption {
+	position: absolute;
+	top: 20%;
+}

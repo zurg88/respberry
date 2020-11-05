@@ -2,8 +2,12 @@
 @import './vars';
 @import './mixins';
 @import './main-header';
+@import '../libs/swiper/swiper';
+@import '../libs/swiper/components/navigation/navigation.scss';
+@import '../libs/swiper/components/pagination/pagination.scss';
+@import '../libs/swiper/components/effect-flip/effect-flip.scss';
+@import './main.scss';
 @import '../fonts/poppins/poppins.css';
-
 
 .wrapper {
 	width: 1140px;
@@ -16,3 +20,7 @@
 	opacity: 1;
 }
 
+.img-responsive {
+	width: 100%;
+	height: auto;
+}

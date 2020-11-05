@@ -23,6 +23,7 @@
 	padding: 0 9px;
 	text-align: center;
 	border-bottom: 1px solid $gray-dark;
+	z-index: 10;
 }
 
 .left-menu-select {
@@ -77,6 +78,7 @@
 	text-align: center;
 	display: none;
 	opacity: 0;
+	z-index: 10;
 	&:last-child {
 		border-bottom: none;
 	}
@@ -168,6 +170,7 @@
 	position: absolute;
 	background-color: $dark-color;
 	display: none;
+	z-index: 10;
 }
 
 .dropdown-link {
@@ -189,6 +192,7 @@
 	color: $gray-text;
 	padding: 40px;
 	display: none;
+	z-index: 10;
 }
 
 .mega-menu-block {
@@ -266,6 +270,7 @@
 .search-open {
 	line-height: 70px;
 	transition: all .5s;
+	z-index: 1;
 	&:hover {
 		background-color: $gray-light;
 	}
@@ -334,11 +339,12 @@
 
 .cart-list-block {
 	position: absolute;
-	top: 72px;
+	top: 71px;
 	right: 0;
 	min-width: 360px;
 	background-color: $dark-color;
 	display: none;
+	z-index: 10;
 }
 
 .cart-block:hover .cart-list-block {

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 24" width="35" height="24">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3a3a3a } 
+	</style>
+	<path id="Сredit card" class="shp0" d="M6 15L12 15C12 13.62 12 14.31 12 13L6 13C6 14.03 6 13.87 6 15ZM35 0L0 0C0 19.13 0 22.12 0 24C1.84 24 32.84 24 35 24C35 21.78 35 8.59 35 0ZM33 22L2 22L2 10L33 10L33 21L33 22ZM33 8L2 8L2 2L33 2L33 8Z" />
+</svg>

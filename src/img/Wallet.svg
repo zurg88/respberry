@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29" width="32" height="29">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3a3a3a } 
+	</style>
+	<path id="Wallet" class="shp0" d="M32 16L31 16L31 9L27.45 9.06L19.14 1L14.1 5.88L11.14 3.01L4.9 9.06L0 9.06L0 29L31 29L31 22L32 22L32 16ZM25.01 9.06L13.27 9.06L19.14 3.37L25.01 9.06ZM11.14 5.38L12.88 7.07L10.82 9.06L7.35 9.06L11.14 5.38ZM29 27L2 27L2 11L29 11L29 16L21 16L21 22L29 22L29 27ZM30 20L23 20L23 18L30 18L30 20Z" />
+</svg>

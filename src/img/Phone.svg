@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28" width="29" height="28">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #3a3a3a;stroke-width: 2 } 
+		.shp1 { fill: #2e4257 } 
+	</style>
+	<g id="Phone">
+		<path id="Rectangle" class="shp0" d="M0 4L29 4L29 25L0 25L0 4Z" />
+		<path id="Rectangle" class="shp0" d="M4 0L15 0L15 28L4 28L4 0Z" />
+		<g id="Buttons">
+			<path id="Rectangle" class="shp1" d="M17 12L19 12L19 14L17 14L17 12Z" />
+			<path id="Rectangle" class="shp1" d="M17 8L25 8L25 10L17 10L17 8Z" />
+			<path id="Rectangle" class="shp1" d="M20 12L22 12L22 14L20 14L20 12Z" />
+			<path id="Rectangle" class="shp1" d="M23 12L25 12L25 14L23 14L23 12Z" />
+			<path id="Rectangle" class="shp1" d="M17 15L19 15L19 17L17 17L17 15Z" />
+			<path id="Rectangle" class="shp1" d="M20 15L22 15L22 17L20 17L20 15Z" />
+			<path id="Rectangle" class="shp1" d="M23 15L25 15L25 17L23 17L23 15Z" />
+			<path id="Rectangle" class="shp1" d="M17 18L19 18L19 20L17 20L17 18Z" />
+			<path id="Rectangle" class="shp1" d="M20 18L22 18L22 20L20 20L20 18Z" />
+			<path id="Rectangle" class="shp1" d="M23 18L25 18L25 20L23 20L23 18Z" />
+		</g>
+	</g>
+</svg>
