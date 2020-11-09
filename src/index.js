@@ -9,6 +9,8 @@ import topSelect from './modules/top-menu-select';
 import projectAnimations from './modules/animations';
 import cart from './modules/cart';
 import carousel from './modules/carousel';
+import starRating from './modules/star-rating';
+
 
 // Animations
 projectAnimations();
@@ -51,3 +53,16 @@ const swiper = new Swiper('.swiper-container', {
 		slideShadows: true,
 	  },
   });
+
+  // Star Rating
+
+  const ratingBlocks = document.querySelectorAll('.rating');
+
+  ratingBlocks.forEach(item => {
+	starRating(item);
+  });
+
+  
+
+
+ 
