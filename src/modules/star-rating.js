@@ -1,15 +1,17 @@
+const removeItemsClass = (elem, classNane) => {
+	elem.classList.remove(classNane);
+};
+
+const addClass = (elem, classNane) => {
+	elem.classList.add(classNane);
+};
+
 const starRating = (rating) => {
 
 	const ratingItem = rating.querySelectorAll('.icon-star');
   
 
-	const removeItemsClass = (elem, classNane) => {
-			elem.classList.remove(classNane);
-	};
 
-	const addClass = (elem, classNane) => {
-		elem.classList.add(classNane);
-	};
 
 	const createCurrentRating = () => {
 		for (let i = 0; i < ratingItem.length; i++) {
@@ -67,5 +69,7 @@ const starRating = (rating) => {
 
 	});
 };
+
+export {addClass, removeItemsClass};
 
 export default starRating;

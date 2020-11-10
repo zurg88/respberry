@@ -186,6 +186,10 @@
 	margin-bottom: 0;
 }
 
+.featured-products-section {
+	margin-top: 30px;
+}
+
 .section-title {
 	text-align: center;
 	@include text-uppercase;
@@ -220,37 +224,39 @@
 	color: #fff;
 }
 
+.tabs-content {
+	@include flex;
+	overflow: hidden;
+}
+
+.tab {
+	order: 1;
+	margin-left: 30px;
+	transition: all .5s;
+}
+
+.active-tab {
+	margin-left: 0;
+	order: 0;
+}
+
 .tab-list {
 	@include flex;
 	margin-top: 25px;
-}
-
-.tab-item-img {
-	background-color: $gray-light;
-	width: 260px;
-	height: 330px;
-	@include flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	&:hover .tab-item-options {
-		display: flex;
-	}
-	&:hover .options-add-to-cart {
-		margin-top: 10px;
-	}
+	width: 1140px;
 }
 
 .tab-item-options {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
+	top: 10px;
+	left: 10px;
 	@include flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	transition: all .3s ease-out;
 	&::before {
 		content: '';
 		background-color: #313131;
@@ -259,7 +265,7 @@
 		position: absolute;
 		opacity: .9;
 	}
-	display: none;
+	opacity: 0;
 }
 
 .tab-options-list {
@@ -288,7 +294,7 @@
 	width: 108px;
 	line-height: 35px;
 	@include text-uppercase;
-	margin-top: 30px;
+	margin-top: 10px;
 	font-size: 11px;
 	font-weight: 600;
 	transition: all .5s;
@@ -296,6 +302,21 @@
 	&:hover {
 		background-color: #fff;
 		color: $dark-color;
+	}
+}
+
+.tab-item-img {
+	background-color: $gray-light;
+	width: 260px;
+	height: 330px;
+	@include flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	&:hover .tab-item-options {
+		opacity: 1;
+		top: 0;
+		left: 0;
 	}
 }
 
@@ -358,6 +379,10 @@
 	}
   }
   
-.active{
+.active {
 	color: #ffba00;
+}
+
+.banner-section {
+	margin-top: 15px;
 }

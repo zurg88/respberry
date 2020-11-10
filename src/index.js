@@ -10,6 +10,7 @@ import projectAnimations from './modules/animations';
 import cart from './modules/cart';
 import carousel from './modules/carousel';
 import starRating from './modules/star-rating';
+import tabs from './modules/tabs';
 
 
 // Animations
@@ -61,6 +62,14 @@ const swiper = new Swiper('.swiper-container', {
   ratingBlocks.forEach(item => {
 	starRating(item);
   });
+
+  // Tabs
+
+const FeaturedTabsContainer = document.querySelector('.featured-products-section');
+const newTabsContainer = document.querySelector('.new-products-section');
+
+tabs(FeaturedTabsContainer);
+tabs(newTabsContainer);
 
   
 

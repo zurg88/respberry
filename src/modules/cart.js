@@ -21,14 +21,11 @@ const cart = () => {
 			}
 
 			let totalPrice = 0;
-
 			itemsCartPrice.forEach(item => {
 				totalPrice += Number(item.textContent);
-				
 			});
 
 			totalPrice += Number(shippingPriceValue.textContent);
-
 			totalPriceValue.textContent = totalPrice;
 		};
 
