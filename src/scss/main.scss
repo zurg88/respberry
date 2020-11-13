@@ -386,3 +386,54 @@
 .banner-section {
 	margin-top: 15px;
 }
+
+.blog-list {
+	@include flex;
+}
+
+.blog-post-img-block {
+	position: relative;
+}
+
+.post-date-block {
+	position: absolute;
+	bottom: -20px;
+	right: 40px;
+	background-color: $dark-color;
+	@include text-uppercase;
+	color: #fff;
+	@include flex-column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 90px;
+	width: 90px;
+	transition: all .5s;
+}
+
+.blog-list-item:hover .post-date-block{
+	background-color: $accent-color;
+}
+
+.post-date {
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 36px;
+}
+
+.decore-line {
+	width: 40px;
+	border-bottom: 3px solid #fff;
+}
+.post-date-month,
+.post-date-year {
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.post-title {
+	font-size: 14px;
+	@include text-uppercase;
+	line-height: 22px;
+	font-weight: 400;
+}
