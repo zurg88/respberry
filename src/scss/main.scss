@@ -387,6 +387,11 @@
 	margin-top: 15px;
 }
 
+.blog-section {
+	padding-bottom: 20px;
+	border-bottom: 1px solid $gray-border;
+}
+
 .blog-list {
 	@include flex;
 }
@@ -431,9 +436,34 @@
 	font-size: 13px;
 }
 
+.blog-post-title {
+	margin-top: 35px;
+}
+
 .post-title {
 	font-size: 14px;
 	@include text-uppercase;
 	line-height: 22px;
 	font-weight: 400;
+}
+
+.brands-section {
+	position: relative;
+	height: 200px;
+}
+
+.brands-list {
+	@include flex;
+	flex-direction: row;
+	position: absolute;
+	width: 100%;
+	align-items: center;
+	margin: 60px 0;
+}
+
+.brands-list-item {
+	transition: all .5s;
+	&:hover {
+		transform: scale(1.2);
+	}
 }
