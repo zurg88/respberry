@@ -246,6 +246,11 @@
 	width: 1140px;
 }
 
+.tab-list-item {
+	width: auto;
+	max-width: 260px;
+}
+
 .tab-item-options {
 	position: absolute;
 	width: 100%;
@@ -392,8 +397,17 @@
 	border-bottom: 1px solid $gray-border;
 }
 
+
+
 .blog-list {
 	@include flex;
+	& :last-child {
+		margin-right: 0;
+	}
+}
+
+.blog-list-item {
+	margin-right: 30px;
 }
 
 .blog-post-img-block {
@@ -467,3 +481,4 @@
 		transform: scale(1.2);
 	}
 }
+

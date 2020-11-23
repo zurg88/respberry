@@ -1,0 +1,77 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) { 
+	.wrapper {
+		width: 100%;
+	}
+
+	.top-menu {
+		position: fixed;
+		top: 0;
+		padding: 10px 0;
+		width: 100%;
+		justify-content: center;
+		background-color: #fff;
+		z-index: 20;
+	}
+
+	.tab-list,
+	.additional-featuries-list {
+		flex-wrap: wrap;
+	}
+
+	.brands-section,
+	.top-left-menu,
+	.account-menu {
+		display: none;
+	}
+
+	.logo-link {
+		margin-right: 0;
+	}
+
+	.tabs-nav-list-item {
+		margin: 2px;
+	}
+
+	.tabs-nav-btn {
+		width: 75px;
+		font-size: 9px;
+	}
+
+	.footer-bottom-secton .wrapper,
+	.footer-section,
+	.blog-list,
+	.main-navigation,
+	.nav-list {
+		flex-direction: column;
+	}
+
+	.tab-list-item {
+		width: 150px;
+	}
+
+	.tab-list-item img,
+	.blog-post-img-block img,
+	.categories-link img,
+	.banner-section img{
+		width: 100%;
+		height: auto;
+	}
+
+ }
+
+@media (min-width: 576px) { 
+	// 
+ }
+
+@media (min-width: 768px) { 
+	//
+ }
+
+@media (min-width: 992px) { 
+	//
+ }
+
+@media (min-width: 1200px) { 
+//
+ }

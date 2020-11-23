@@ -1,6 +1,7 @@
 @import './reset';
 @import './vars';
 @import './mixins';
+@import './media';
 @import './main-header';
 @import './footer.scss';
 @import '../libs/swiper/swiper';
@@ -10,6 +11,7 @@
 @import './main.scss';
 @import '../fonts/poppins/poppins.css';
 @import '../fonts/fontello-icons/fontello-608a65cf/css/fontello.css';
+
 
 .wrapper {
 	width: 1140px;
