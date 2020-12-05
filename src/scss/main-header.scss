@@ -129,6 +129,7 @@
 	margin: 0 80px;
 	@include text-uppercase;
 	font-size: 12px;
+	transition: all .5s;
 }
 
 .main-nav-link {

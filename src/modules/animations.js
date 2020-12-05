@@ -1,3 +1,7 @@
+const toggleClass = (elem, className) =>{
+	elem.classList.toggle(className);
+};
+
 const projectAnimations = () => {
 	const	accountListItems = document.querySelectorAll('.account-list-link'),
 		 userMenuContainer = document.querySelector('.user-menu-container'),
@@ -9,11 +13,6 @@ const projectAnimations = () => {
 		 megaMenuBlock = document.querySelectorAll('.mega-menu-block'),
 		 cartListItems = document.querySelectorAll('.cart-list-item'),
 		 cartBlock = document.querySelector('.cart-block');
-
-
-	const toggleClass = (elem, className) =>{
-		elem.classList.toggle(className);
-	};
 
 	const userMenuAnimation = (container, items, delay) => {
 		container.addEventListener('mouseenter', () => {
@@ -61,7 +60,6 @@ const projectAnimations = () => {
 		}
 	}, false);
 
-
 	userMenuAnimation(userMenuContainer, accountListItems, 25);
 	userMenuAnimation(dresses, dropdownLinks, 25);
 	userMenuAnimation(cartBlock, cartListItems, 25);
@@ -71,3 +69,4 @@ const projectAnimations = () => {
 };
 
 export default projectAnimations;
+export {toggleClass};

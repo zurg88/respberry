@@ -384,6 +384,36 @@
 		height: 100%;
 	}
   }
+
+.mobile-slider {
+	overflow: hidden;
+	width: 100%;
+	margin-top: 30px;
+	.swiper-wrapper {
+		@include flex;
+	}
+
+	.swiper-slide {
+		flex-wrap: wrap;
+		width: 100vw;
+	}
+
+	.tab-item-options {
+		display: flex;
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 320px;
+		opacity: 1;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: transparent;
+		&::before {
+			display: none;
+		}
+	}
+}
+
   
 .active {
 	color: #ffba00;

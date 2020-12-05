@@ -11,6 +11,7 @@ import cart from './modules/cart';
 import carousel from './modules/carousel';
 import starRating from './modules/star-rating';
 import tabs from './modules/tabs';
+import mobileMenu from './modules/mobile-menu';
 
 
 // Animations
@@ -28,33 +29,6 @@ cart();
 // Carousel
 carousel();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination]);
-
-// init Swiper:
-const swiper = new Swiper('.swiper-container', {
-	spaceBetween: 30,
-	speed: 400,
-	centeredSlides: true,
-	pagination: {
-	  el: '.swiper-pagination',
-	  clickable: true,
-	},
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
-	},
-	autoplay: {
-		delay: 2500,
-		disableOnInteraction: false,
-	  },
-	  flipEffect: {
-		slideShadows: true,
-	  },
-  });
-
   // Star Rating
 
   const ratingBlocks = document.querySelectorAll('.rating');
@@ -71,6 +45,9 @@ const newTabsContainer = document.querySelector('.new-products-section');
 tabs(FeaturedTabsContainer);
 tabs(newTabsContainer);
 
+// Mobile Menu
+
+mobileMenu();
   
 
 

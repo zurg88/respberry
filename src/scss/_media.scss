@@ -1,5 +1,5 @@
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 320px) { 
+@media (max-width: 480px) { 
 	.wrapper {
 		width: 100%;
 	}
@@ -7,11 +7,54 @@
 	.top-menu {
 		position: fixed;
 		top: 0;
-		padding: 10px 0;
+		padding: 10px 0 0;
 		width: 100%;
-		justify-content: center;
+		justify-content: space-between;
 		background-color: #fff;
 		z-index: 20;
+		height: 6vh;
+	}
+
+	.nav-section {
+		position: fixed;
+		// top: 25px;
+		bottom: 0;
+		z-index: 20;
+		width: 100%;
+		background-color: #fff;
+		.main-navigation {
+			flex-direction: row;
+			justify-content: space-between;
+		} 
+	}
+
+	.main-nav {
+		overflow: hidden;
+		height: 0;
+	}
+
+	.main-nav-open {
+
+		.main-nav {
+			height: 93vh;
+		}
+		.search-block,
+		.cart-block {
+			display: none;
+		}
+	}
+
+	.main-nav-link {
+		font-size: 1.2em;
+	}
+
+	.search-open,
+	.cart-block {
+		line-height: 35px;
+	}
+
+	.cart-block {
+		margin-right: 15px;
 	}
 
 	.tab-list,
@@ -46,8 +89,17 @@
 		flex-direction: column;
 	}
 
+	.active-tab {
+		width: 100vw;
+		margin: 0 auto;
+		margin-right: 100vw;
+	}
+
+
+	.tab-item-img,
 	.tab-list-item {
 		width: 150px;
+		height: auto;
 	}
 
 	.tab-list-item img,
@@ -56,6 +108,10 @@
 	.banner-section img{
 		width: 100%;
 		height: auto;
+	}
+
+	.tab-list {
+		display: none;
 	}
 
  }
