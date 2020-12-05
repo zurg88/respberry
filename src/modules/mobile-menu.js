@@ -2,7 +2,7 @@ import {toggleClass} from './animations';
 
 const mobileMenu = () => {
 	const hamburger = document.querySelector('.hamburger-menu'),
-		  mainNav = document.querySelector('.main-navigation');
+		  mainNav = document.querySelector('.nav-section');
 
 	hamburger.addEventListener('click', () => {
 		toggleClass(hamburger, 'open');

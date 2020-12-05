@@ -30,10 +30,10 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server --open --mode=production",
+    "dev": "webpack-dev-server --open serve --mode=development",
     "build": "webpack --mode=production",
-    "start": "webpack serve --open",
-    "watch": "webpack --watch"
+    "start": "webpack --open serve",
+    "watch": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",
