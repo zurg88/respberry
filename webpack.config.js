@@ -7,6 +7,18 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js'
 	},
+	devServer: {
+		publicPath: '/',
+		host: '192.168.100.3',
+		port: 8080,
+		proxy: {
+		  '/api/**': {
+			target: '192.168.100.3:8000',
+			secure: false,
+			changeOrigin: true,
+		  }
+		},
+	  },
 	module: {
 		rules: [
 			{

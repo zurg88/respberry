@@ -298,10 +298,12 @@
 	width: 350px;
 	width: 0;
 	display: none;
+	transition: width 1s;
 }
 
 .show-form {
 	display: flex;
+	width: 350px;
 }
 
 .search-input {

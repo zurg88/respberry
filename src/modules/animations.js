@@ -53,11 +53,6 @@ const projectAnimations = () => {
 	searchOpenbtn.addEventListener('click', () => {
 		toggleClass(searchForm, 'show-form');
 		toggleClass(searchOpenbtn, 'search-show');
-		if (searchOpenbtn.classList.contains('search-show')) {
-			changeElemWidth(searchForm, 350, 1);
-		} else {
-			searchForm.style.width = '0';
-		}
 	}, false);
 
 	userMenuAnimation(userMenuContainer, accountListItems, 25);
