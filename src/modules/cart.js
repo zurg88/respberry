@@ -3,17 +3,27 @@ const cart = () => {
 		cartItemCloseCcon = document.querySelectorAll('.cart-item-close-icon'),
 		cartList = document.querySelector('.cart-list'),
 		shippingPriceValue = document.querySelector('.shipping-price-value'),
-		totalPriceValue = document.querySelector('.total-value'),
+		totalPriceValue = document.querySelectorAll('.total-value'),
 		mobilePopupCartList = document.querySelector('.mobile-popup-cart-list'),
-		cartIconBlock = document.querySelector('.cart-icon-block');
+		cartIcon = document.querySelector('.cart-icon'),
+		cartItemsValue = document.querySelector('.cart-items'),
+		closeCartPopup = document.querySelector('.close-cart-popup'),
+		cartIconBlock = document.querySelector('.cart-icon-block'),
+		cartBlock = document.querySelector('.cart-block');
 
-		cartItemCloseCcon.forEach(item => {
-			item.addEventListener('click', () => {
-				const itemParentElement = item.closest('.cart-list-item');
-				itemParentElement.remove();
-				cartTotalPrice();
+		const removeCartItem = () => {
+			const cartItemCloseCcon = document.querySelectorAll('.cart-item-close-icon');
+
+			cartItemCloseCcon.forEach(item => {
+				item.addEventListener('click', () => {
+					const itemParentElement = item.closest('.cart-list-item');
+					itemParentElement.remove();
+					cartTotalPrice();
+				});
 			});
-		});
+		};
+
+		removeCartItem();
 
 		const cartTotalPrice = () => {
 			const itemsCartPrice = cartList.querySelectorAll('.cart-price');
@@ -28,21 +38,53 @@ const cart = () => {
 			});
 
 			totalPrice += Number(shippingPriceValue.textContent);
-			totalPriceValue.textContent = totalPrice;
+
+			totalPriceValue.forEach(item => {
+				item.textContent = totalPrice;
+			});
+			// totalPriceValue.textContent = totalPrice;
 		};
 
 		cartTotalPrice();
 
 		cartIconBlock.addEventListener('click', () => {
-			
-			  if (window.matchMedia("(max-width: 576px)").matches) {
-				const cartListClone = cartListBlock.cloneNode(true);
+			if (window.matchMedia("(max-width: 576px)").matches) {
+			  cartIcon.classList.toggle('display-none');
+			  cartItemsValue.classList.toggle('display-none');
+			  closeCartPopup.classList.toggle('display-flex');
+			}
+	  });
 
-				mobilePopupCartList.innerHTML = cartListClone.innerHTML;
-				console.log(mobilePopupCartList);
-			  }
+	  closeCartPopup.addEventListener('click', () => {
+		if (cartListBlock.classList.contains('show-element')){
+			cartListBlock.classList.remove('show-element');
+		}
+	});
+
+		cartBlock.addEventListener('click', ()=> {
+			if (closeCartPopup.classList.contains('display-flex')) {
+				cartListBlock.classList.add('show-element');
+			}
+			
 
 		});
+
+		window.addEventListener('click', (event) => {
+			const target = event.target;
+			if (!target.closest('.cart-block')) {
+			
+				if ( !target.closest('img') && target.closest('.close-cart-popup')) {
+					console.log(target);
+					cartListBlock.classList.remove('show-element');
+				}
+			}
+		});
+
+		
+
+		
+
+		
 };
 
 export default cart;

@@ -15,6 +15,7 @@ const projectAnimations = () => {
 		 cartBlock = document.querySelector('.cart-block');
 
 	const userMenuAnimation = (container, items, delay) => {
+
 		container.addEventListener('mouseenter', () => {
 			let count = 0;
 			
@@ -31,6 +32,21 @@ const projectAnimations = () => {
 			items.forEach(item => {
 				item.style.opacity = '0';
 			});
+		}, false);
+	};
+
+	const elemClickOpacityAnimation = (container, items, delay) => {
+		container.addEventListener('click', (event) => {
+			const target = event.target;
+			let count = 0;
+			
+			const intervalId = setInterval(() => {
+				if (count === items.length - 1)  {
+					clearInterval(intervalId);
+				}
+				items[count].style.opacity = '1';
+					count++;
+			}, delay);
 		}, false);
 	};
 
@@ -57,10 +73,10 @@ const projectAnimations = () => {
 
 	userMenuAnimation(userMenuContainer, accountListItems, 25);
 	userMenuAnimation(dresses, dropdownLinks, 25);
-	userMenuAnimation(cartBlock, cartListItems, 25);
-	userMenuAnimation(megaMenu, megaMenuBlock, 100);
+	userMenuAnimation(megaMenu, megaMenuBlock, 80);
+	elemClickOpacityAnimation(cartBlock, cartListItems, 25);
 
-	
+
 };
 
 export default projectAnimations;

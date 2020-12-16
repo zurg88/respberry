@@ -5,7 +5,7 @@ module.exports = {
 	entry: { main: './src/index.js' },
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js'
+		filename: 'bundle.js',
 	},
 	devServer: {
 		publicPath: '/',
@@ -14,8 +14,6 @@ module.exports = {
 		proxy: {
 		  '/api/**': {
 			target: '192.168.100.3:8000',
-			secure: false,
-			changeOrigin: true,
 		  }
 		},
 	  },

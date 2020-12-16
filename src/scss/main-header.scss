@@ -324,6 +324,7 @@
 	line-height: 70px;
 	min-width: 65px;
 	position: relative;
+	cursor: pointer;
 }
 
 .cart-icon-block {
@@ -350,11 +351,7 @@
 	min-width: 360px;
 	background-color: $dark-color;
 	display: none;
-	z-index: 10;
-}
-
-.cart-block:hover .cart-list-block {
-	display: flex;
+	z-index: 50;
 }
 
 .cart-list-item {
