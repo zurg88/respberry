@@ -26,13 +26,13 @@ const projectAnimations = () => {
 				items[count].style.opacity = '1';
 					count++;
 			}, delay);
-		}, false);
+		});
 		
 		container.addEventListener('mouseleave', () => {
 			items.forEach(item => {
 				item.style.opacity = '0';
 			});
-		}, false);
+		});
 	};
 
 	const elemClickOpacityAnimation = (container, items, delay) => {
@@ -47,7 +47,7 @@ const projectAnimations = () => {
 				items[count].style.opacity = '1';
 					count++;
 			}, delay);
-		}, false);
+		});
 	};
 
 	const changeElemWidth = (elem, width, delay) => {
@@ -69,7 +69,7 @@ const projectAnimations = () => {
 	searchOpenbtn.addEventListener('click', () => {
 		toggleClass(searchForm, 'show-form');
 		toggleClass(searchOpenbtn, 'search-show');
-	}, false);
+	});
 
 	userMenuAnimation(userMenuContainer, accountListItems, 25);
 	userMenuAnimation(dresses, dropdownLinks, 25);

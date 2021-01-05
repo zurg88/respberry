@@ -12,6 +12,7 @@ import carousel from './modules/carousel';
 import starRating from './modules/star-rating';
 import tabs from './modules/tabs';
 import mobileMenu from './modules/mobile-menu';
+import changeCurrency from './modules/currency';
 
 
 // Animations
@@ -48,6 +49,10 @@ tabs(newTabsContainer);
 // Mobile Menu
 
 mobileMenu();
+
+// Currency select 
+
+changeCurrency();
   
 
 
