@@ -48,6 +48,10 @@
 		.cart-block {
 			display: none;
 		}
+
+		.mobile-hidden {
+			display: none !important;
+		}
 	}
 
 	.main-nav-link {
@@ -296,7 +300,7 @@
 		z-index: 50;
 		background-color: #333;
 		top: 7vh;
-		height: 84vh;
+		height: 85vh;
 		flex-direction: column;
 		overflow: scroll;
 	}
@@ -327,6 +331,11 @@
 	.footer-form-btn {
 		right: 10px;
 	}
+
+	.mobile-hidden {
+		display: none;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) { 
@@ -434,6 +443,7 @@
 	.footer-form-btn {
 		right: 10px;
 	}
+
  }
 
 @media (min-width: 1025px) { 
@@ -443,5 +453,9 @@
 
 	.hamburger-menu {
 		display: none;
+	}
+
+	.cart-block:hover > .cart-list-block {
+		display: flex;
 	}
  }

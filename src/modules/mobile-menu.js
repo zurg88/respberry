@@ -8,6 +8,8 @@ const mobileMenu = () => {
 		toggleClass(hamburger, 'open');
 		toggleClass(mainNav, 'main-nav-open');
 
+		toggleClass(document.body, 'ov-hidden');
+
 	}, false);
 };
 

@@ -74,7 +74,15 @@ const projectAnimations = () => {
 	userMenuAnimation(userMenuContainer, accountListItems, 25);
 	userMenuAnimation(dresses, dropdownLinks, 25);
 	userMenuAnimation(megaMenu, megaMenuBlock, 80);
-	elemClickOpacityAnimation(cartBlock, cartListItems, 25);
+
+	if (window.matchMedia("(min-width: 1025px)").matches) {
+		userMenuAnimation(cartBlock, cartListItems, 25);
+	}
+	
+	if (window.matchMedia("(max-width: 1024px)").matches) {
+		elemClickOpacityAnimation(cartBlock, cartListItems, 25);
+	}
+	
 
 
 };
