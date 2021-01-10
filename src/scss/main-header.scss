@@ -366,7 +366,13 @@
 	background-color: #fff;
 	margin-right: 20px;
 	padding: 13px 1px;
+	max-width: 66px;
+	max-height: 80px;
 	@include flex;
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .cart-item-close-icon {
@@ -437,4 +443,9 @@
 	font-size: 14px;
 	font-weight: 800;
 	line-height: 50px;
+}
+
+.cart-empty-el {
+	color: #fff;
+	text-align: center;
 }

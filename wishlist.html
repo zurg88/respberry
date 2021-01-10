@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Respberry</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="wrapper">
+
+			<div class="top-menu">
+				<div class="top-left-menu">
+					<ul class="left-menu-select currency-select" id="currency-select">
+						<li class="active select-item"></li>
+						<li class="select-item">usd</li>
+						<li class="select-item">eur</li>
+					</ul>
+
+					<div class="wishlist">
+						<img src="./src/img/Like.png" alt="wishlist">
+						<span>(0)</span>
+					</div>
+				</div>
+
+				<div class="logo"> <a class="logo-link" href="#"><img src="./src/img/Logo.svg" alt="Raspberry"></a> </div>
+
+				<div class="account-menu">
+					<div class="user-menu-container">
+						<a class="user-link account-link" href="#">JOIN FREE</a>
+						<ul class="account-list">
+							<li class="account-list-item"><a class="account-list-link" href="#">My account</a></li>
+							<li class="account-list-item"><a class="account-list-link" href="#">Wishlist</a></li>
+							<li class="account-list-item"><a class="account-list-link" href="#">My Cart</a></li>
+							<li class="account-list-item"><a class="account-list-link" href="#">Sign Out</a></li>
+						</ul>
+					</div>
+
+					<span class="slash">&frasl;</span> 
+					<a class="account-link sign-in-link" href="#">SIGN IN</a>
+
+				</div>
+
+				<div class="hamburger-menu" id="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				  </div>
+			</div>
+		</div>
+
+			<section class="nav-section">
+				<div class="wrapper main-navigation">
+					<div class="search-block">
+						<button class="search-open">
+							<img src="./src/img/Search.svg" alt="search">
+						</button>
+
+						<div class="search-dropdown">
+							<form class="search-form">
+								<input class="search-input" type="search" id="search">
+								<label for="search">
+									<button class="search-submit">
+										<img src="./src/img/Arrow-search.svg" alt="search">
+									</button>
+								</label>
+							</form>
+						</div>
+							
+					</div>
+
+					<nav class="main-nav">
+
+						<ul class="nav-list">
+							<li class="nav-list-item"><a class="main-nav-link active-nav-link" href="#">Home</a></li>
+	
+							<li class="nav-list-item mega-menu mobile-hidden">
+								<a class="main-nav-link" href="#">Clothing</a>
+
+								<div class="drop-down-mega-menu">
+									<div class="mega-menu-block">
+										<div class="mega-menu-block-title"> <h3>Womens</h3> </div>
+
+										<ul class="mega-menu-list">
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Jacket</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Coats</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Parka</a></li>
+										</ul>
+									</div>
+
+									<div class="mega-menu-block">
+										<div class="mega-menu-block-title"> <h3>Mens</h3> </div>
+
+										<ul class="mega-menu-list">
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Jacket</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Coats</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Parka</a></li>
+										</ul>
+									</div>
+
+									<div class="mega-menu-block">
+									   <div class="mega-menu-block-title"><h3>Children</h3></div> 
+
+										<ul class="mega-menu-list">
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Jacket</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Coats</a></li>
+											<li class="mega-menu-item"><a class="mega-menu-link" href="#">Parka</a></li>
+										</ul>
+									</div>
+
+									<div class="mega-menu-block sale-block">
+										<div class="sale">
+											<img src="./src/img/Sale-img.jpg" alt="sale">
+											<div class="sale-info">
+												<p>Sale</p>
+												<p>15%</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-list-item dresses">
+								<a class="main-nav-link" href="#">Dresses</a>
+
+								<ul class="drop-down-menu mobile-hidden">
+									<li class="dropdown-menu-item"> <a class="dropdown-link" href="#">For Men</a> </li>
+									<li class="dropdown-menu-item"> <a class="dropdown-link" href="#">For Women</a> </li>
+									<li class="dropdown-menu-item"> <a class="dropdown-link" href="#">For Children</a> </li>
+									<li class="dropdown-menu-item"> <a class="dropdown-link" href="#">More</a> </li>
+								</ul>
+							</li>
+
+							<li class="nav-list-item"><a class="main-nav-link" href="#">Shoes</a></li>
+							<li class="nav-list-item"><a class="main-nav-link" href="#">Accessories</a></li>
+							<li class="nav-list-item"><a class="main-nav-link" href="#">Blog</a></li>
+							<li class="nav-list-item"><a class="main-nav-link" href="#">Contact us</a></li>
+						</ul>
+
+					</nav>
+
+					<div class="cart-block">
+						<div class="cart-icon-block">
+							<img class="cart-icon" src="./src/img/Cart.svg" alt="cart">
+							<span class="cart-items">0</span>
+						</div>
+
+						<div class="cart-list-block">
+							<ul class="cart-list">
+								<li class="cart-list-item">
+									<div class="cart-item-img">
+										<img src="./src/img/Photo-bag.png" alt="photo">
+									</div>
+
+									<div class="cart-description-block">
+										<p class="cart-description">
+											<span class="cart-quantity-product">1</span>
+											<span>x</span>
+											<span class="cart-description-title">Leather bag for clothes</span>
+										</p>
+
+										<p class="product-price">
+											<span class="currency-icon">$</span>
+											<span class="cart-price price">130</span>
+										</p>
+									</div>
+
+									<div class="cart-item-close-icon">
+										<img src="./src/img/Close-icon.png" alt="close">
+									</div>
+								</li>
+
+								<li class="cart-list-item">
+									<div class="cart-item-img">
+										<img src="./src/img/Photo-bag.png" alt="photo">
+									</div>
+
+									<div class="cart-description-block">
+										<p class="cart-description">
+											<span class="cart-quantity-product">1</span>
+											<span>x</span>
+											<span class="cart-description-title">Leather bag for clothes</span>
+										</p>
+
+										<p class="product-price">
+											<span class="currency-icon">$</span>
+											<span class="cart-price price">130</span>
+										</p>
+									</div>
+
+									<div class="cart-item-close-icon">
+										<img src="./src/img/Close-icon.png" alt="close">
+									</div>
+								</li>
+
+								<li class="cart-list-item">
+									<div class="cart-item-img">
+										<img src="./src/img/Photo-bag.png" alt="photo">
+									</div>
+
+									<div class="cart-description-block">
+										<p class="cart-description">
+											<span class="cart-quantity-product">1</span>
+											<span>x</span>
+											<span class="cart-description-title">Leather bag for clothes</span>
+										</p>
+
+										<p class="product-price">
+											<span class="currency-icon">$</span>
+											<span class="cart-price price">130</span>
+										</p>
+									</div>
+
+									<div class="cart-item-close-icon">
+										<img src="./src/img/Close-icon.png" alt="close">
+									</div>
+								</li>
+							</ul>
+
+							<div class="total-price-block">
+								<div class="total-price-title">
+									<span>Shipping</span>
+									<span>Total</span>
+								</div>
+
+								<div class="total-price">
+									<p class="shipping-price">
+										<span class="currency-icon">$</span>
+										<span class="shipping-price-value price">7.00</span>
+									</p>
+
+									<p class="total-price-value">
+										<span class="currency-icon">$</span>
+										<span class="total-value price">130.00</span>
+									</p>
+								</div>
+							</div>
+
+							<button class="view-cart-button">View my shopping cart</button>
+
+							<div class="mobile-close">
+								<img src="./src/img/Close-icon.png" alt="close">
+								<span>Close</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+	</header>
+
+
+
+
+	<footer class="main-footer">
+		<div class="wrapper">
+			<section class="footer-section">
+				<div class="footer-block">
+					<h4 class="footer-block-title">Follow us</h4>
+					<ul class="footer-block-list">
+						<li><a class="footer-list-link" href="#"><i class="icon-facebook"></i> Facebook</a></li>
+						<li><a class="footer-list-link" href="#"><i class="icon-twitter"></i> Twitter</a></li>
+						<li><a class="footer-list-link" href="#"><i class="icon-google"></i> Google Plus</a></li>
+						<li><a class="footer-list-link" href="#"><i class="icon-instagram"></i> Instagram</a></li>
+						<li><a class="footer-list-link" href="#"><i class="icon-pinterest"></i> Pinterest</a></li>
+					</ul>
+				</div>
+					
+				<div class="footer-block footer-account-block">
+					<h4 class="footer-block-title">My account</h4>
+					<ul class="footer-block-list">
+						<li><a class="footer-list-link" href="#">My account</a></li>
+						<li><a class="footer-list-link" href="#">Wishlist</a></li>
+						<li><a class="footer-list-link" href="#">My cart</a></li>
+						<li><a class="footer-list-link" href="#">Login</a></li>
+						<li><a class="footer-list-link" href="#">Sign out</a></li>
+					</ul>
+				</div>
+					
+				<div class="footer-block footer-info-block">
+					<h4 class="footer-block-title">Information</h4>
+					<ul class="footer-block-list">
+						<li><a class="footer-list-link" href="#">New products</a></li>
+						<li><a class="footer-list-link" href="#">Top salers</a></li>
+						<li><a class="footer-list-link" href="#">FAQ</a></li>
+						<li><a class="footer-list-link" href="#">Blog</a></li>
+						<li><a class="footer-list-link" href="#">Contact us</a></li>
+					</ul>
+				</div>
+					
+				<div class="footer-block footer-contacts-block">
+					<h4 class="footer-block-title">Contact us</h4>
+					<ul class="footer-block-list">
+						<li><a class="footer-list-link" href="#"><i class="icon-point"></i> Skariny 69-22, Minsk, Belarus</a></li>
+						<li><a class="footer-list-link" href="tel:+375291465108"><i class="icon-footer-phone"></i>+375 (29) 146 - 51 - 08</a></li>
+						<li><a class="footer-list-link" href="mailto:gnatsenko@gmail.com"><i class="icon-mail"></i>gnatsenko@gmail.com</a></li>
+						<li class="footer-list-item">
+							<ul class="footer-cart-list">
+								<li class="footer-cart-list-item"><img src="./src/img/cart1.png" alt="cart"></li>
+								<li class="footer-cart-list-item"><img src="./src/img/cart2.png" alt="cart"></li>
+								<li class="footer-cart-list-item"><img src="./src/img/cart3.png" alt="cart"></li>
+								<li class="footer-cart-list-item"><img src="./src/img/cart4.png" alt="cart"></li>
+								<li class="footer-cart-list-item"><img src="./src/img/cart5.png" alt="cart"></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<section class="footer-bottom-secton">
+			<div class="wrapper">
+				<div class="footer-logo">
+					<a href="#">
+						<img src="./src/img/footer-logo.svg" alt="logo">
+					</a>
+				</div>
+
+				<div class="copyright">
+					<span>Copyright c 2020 Rights Reserved</span>
+				</div>
+
+				<form id="footer-form">
+					<input class="footer-form-input" type="text" placeholder="Your e-mail">
+					<button class="footer-form-btn" type="submit">Subscribe</button>
+				</form>
+			</div>
+		</section>
+	</footer>
+
+	<script src="./dist/bundle.js"></script>
+</body>
+</html>

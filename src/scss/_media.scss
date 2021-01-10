@@ -447,10 +447,8 @@
  }
 
 @media (min-width: 1025px) { 
-	.mobile-slider {
-		display: none;
-	}
-
+	.mobile-slider,
+	.mobile-close,
 	.hamburger-menu {
 		display: none;
 	}
@@ -458,4 +456,5 @@
 	.cart-block:hover > .cart-list-block {
 		display: flex;
 	}
+
  }
