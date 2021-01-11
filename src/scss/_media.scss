@@ -305,6 +305,29 @@
 		overflow: scroll;
 	}
 
+	.product-img {
+		margin-right: 0;
+		margin-top: 5%;
+	}
+
+	.product-description {
+		flex-direction: column;
+		font-size: 9px;
+	}
+
+	.table-head,
+	.wish-table {
+		font-size: 9px;
+	}
+	.table-row {
+		line-height: 1;
+	}
+
+	.wishlist-section-title .section-title {
+		margin: 0;
+		padding: 0;
+	}
+
  }
 
  @media (min-width: 280px) and (max-width: 320px) {

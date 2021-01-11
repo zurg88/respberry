@@ -1,7 +1,8 @@
 import { addClass, removeItemsClass } from "./star-rating";
 
 const tabs = (tabsContainer) =>  {
-	const tabsNav = tabsContainer.querySelectorAll('.tabs-nav-btn'),
+	try {
+		const tabsNav = tabsContainer.querySelectorAll('.tabs-nav-btn'),
 		  tabsCollection = tabsContainer.querySelectorAll('.tab');
 
 	const activateTab = () => {
@@ -25,7 +26,12 @@ const tabs = (tabsContainer) =>  {
 		addClass(item, 'tabs-nav-active');
 		activateTab();
 	  });
-	});	  
+	});
+	} catch (error) {
+		return false;
+	}
+
+		  
 };
 
 export default tabs;

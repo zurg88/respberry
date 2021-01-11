@@ -3,39 +3,43 @@ const toggleClass = (elem, className) =>{
 };
 
 const userMenuAnimation = (container, items, delay) => {
-
-	container.addEventListener('mouseenter', () => {
-		let count = 0;
-		
-		const intervalId = setInterval(() => {
-			if (count === items.length - 1)  {
-				clearInterval(intervalId);
-			}
-			items[count].style.opacity = '1';
-				count++;
-		}, delay);
-	});
-	
-	container.addEventListener('mouseleave', () => {
-		items.forEach(item => {
-			item.style.opacity = '0';
+	if (items.length > 0) {
+		container.addEventListener('mouseenter', () => {
+			let count = 0;
+			
+			const intervalId = setInterval(() => {
+				if (count === items.length - 1)  {
+					clearInterval(intervalId);
+				}
+				items[count].style.opacity = '1';
+					count++;
+			}, delay);
 		});
-	});
+		
+		container.addEventListener('mouseleave', () => {
+			items.forEach(item => {
+				item.style.opacity = '0';
+			});
+		});
+	}
+	
 };
 
 const elemClickOpacityAnimation = (container, items, delay) => {
-	container.addEventListener('click', (event) => {
-		const target = event.target;
-		let count = 0;
-		
-		const intervalId = setInterval(() => {
-			if (count === items.length - 1)  {
-				clearInterval(intervalId);
-			}
-			items[count].style.opacity = '1';
-				count++;
-		}, delay);
-	});
+	if (items.length > 0) {
+		container.addEventListener('click', (event) => {
+			const target = event.target;
+			let count = 0;
+			
+			const intervalId = setInterval(() => {
+				if (count === items.length - 1)  {
+					clearInterval(intervalId);
+				}
+				items[count].style.opacity = '1';
+					count++;
+			}, delay);
+		});
+	}
 };
 
 const projectAnimations = () => {

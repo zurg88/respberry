@@ -13,6 +13,7 @@ import starRating from './modules/star-rating';
 import tabs from './modules/tabs';
 import mobileMenu from './modules/mobile-menu';
 import changeCurrency from './modules/currency';
+import wishlist from './modules/wishlist';
 
 
 // Animations
@@ -54,6 +55,10 @@ mobileMenu();
 
 changeCurrency();
   
+// Wishlist 
+
+wishlist();
+
 
 
  
