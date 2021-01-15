@@ -264,7 +264,7 @@ button {
   .left-menu-select .active, .left-menu-select:last-child {
     border-bottom: none; }
 
-.wishlist {
+.wishlist-link {
   margin-left: 75px; }
 
 .logo {

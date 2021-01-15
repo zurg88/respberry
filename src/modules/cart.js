@@ -1,5 +1,5 @@
 import {userMenuAnimation, elemClickOpacityAnimation} from './animations';
-import createCarteSessionStorege from './localStorege';
+import { addDataToStorege, removeStorageItem} from './localStorege';
 
 const cart = () => {
 	const cartListBlock = document.querySelector('.cart-list-block'),
@@ -12,8 +12,9 @@ const cart = () => {
 		addToCartBtn = document.querySelectorAll('.options-add-to-cart'),
 		currencySelect = document.getElementById('currency-select'),
 		currencySelectActive = currencySelect.querySelector('.active'),
+		wishlistLink = document.querySelector('.wishlist-link'),
 		cartBlock = document.querySelector('.cart-block');
-
+		
 		const showCartListItems = () => {
 			const cartListItems = document.querySelectorAll('.cart-list-item');
 			if (window.matchMedia("(min-width: 1025px)").matches) {
@@ -36,10 +37,14 @@ const cart = () => {
 
 		const removeCartItem = () => {
 			const cartItemCloseCcon = document.querySelectorAll('.cart-item-close-icon');
-
+			
 			cartItemCloseCcon.forEach(item => {
 				item.addEventListener('click', () => {
+					const cartListItems = document.querySelectorAll('.cart-list-item');
 					const itemParentElement = item.closest('.cart-list-item');
+					const itemsArr = [...cartListItems];
+					const elemIndex = itemsArr.indexOf(itemParentElement);
+					removeStorageItem(elemIndex, 'cartData');
 					itemParentElement.remove();
 					cartTotalPrice();
 					getcartItemsValue();
@@ -96,7 +101,7 @@ const cart = () => {
 				}
 			});
 		}
-
+		
 	const cteateCartItem = (elemImage, elemPrice, elemTitle) => {
 		const newCartItem = document.createElement('li'),
 			cartImgBlock = document.createElement('div'),
@@ -121,15 +126,18 @@ const cart = () => {
 		productPrice.classList.add('product-price');
 		currencyIcon.classList.add('currency-icon');
 		cartPrice.classList.add('cart-price');
+		cartPrice.classList.add('price');
 		newCartItemCloseBlock.classList.add('cart-item-close-icon');
 
+		
 		cartImg.src = elemImage.src;
+		cartPrice.textContent = elemPrice.textContent;
+		cartDescriptionTitle.textContent = elemTitle.textContent;
+
 		cartQuantityIcon.textContent = 'x';
 		newCloseIcon.src = './src/img/Close-icon.png';
-		cartPrice.textContent = elemPrice.textContent;
 		cartQuantityProduct.textContent = '1';
-		cartQuantityProduct.textContent = elemTitle.textContent;
-
+		
 		if( currencySelectActive.textContent === 'usd' ) {
 			currencyIcon.textContent = '$';
 		} else {
@@ -190,6 +198,9 @@ const cart = () => {
 		removeCartItem();
 		cartTotalPrice();
 		showCartListItems();
+
+		const cartListItems = document.querySelectorAll('.cart-list-item');
+		addDataToStorege(cartListItems, 'data1', '.cart-description-title', '.cart-item-img > img', 'cartData');
 	};
 
 	addToCartBtn.forEach(item => {
@@ -201,10 +212,21 @@ const cart = () => {
 			if ( shippingPriceValue.textContent === '0') {
 				shippingPriceValue.textContent = '7';
 			}
-			createCarteSessionStorege(item, '.tab-list-item', '.tab-item-title > a');
 			addToCart(item);
 		});
 	});
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
 };
 
 export default cart;

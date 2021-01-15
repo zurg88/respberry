@@ -1,8 +1,11 @@
+import {createCartSessionStorege, addDataToStorege} from './localStorege';
+
 const wishlist = () => {
-	
-	const wishlist = document.querySelector('.wishlist'),
-		itemsValue = wishlist.querySelector('.items-value'),
-		footer = wishlist.querySelector('.main-footer');
+	const wishlistLink = document.querySelector('.wishlist-link'),
+		itemsValue = wishlistLink.querySelector('.items-value'),
+		tableRow = document.querySelectorAll('.table-row');
+
+	console.log(tableRow);
 	
 	const wishlistCloseTableRow = () => {
 		const colseBtnCollection = document.querySelectorAll('.close-btn');
