@@ -267,6 +267,10 @@ button {
 .wishlist-link {
   margin-left: 75px; }
 
+.wishlist-block > .cart-list-block {
+  left: 0;
+  top: 24px; }
+
 .logo {
   position: relative; }
 
@@ -1681,9 +1685,14 @@ body {
   .additional-featuries-list {
     flex-wrap: wrap; }
   .brands-section,
-  .top-left-menu,
+  .left-menu-select,
   .account-menu {
     display: none; }
+  .top-left-menu {
+    width: 17%;
+    font-weight: 500; }
+  .wishlist-link {
+    margin-left: 0; }
   .logo-link {
     margin-right: 0; }
   .main-content {
@@ -1819,7 +1828,7 @@ body {
     height: 85vh;
     flex-direction: column;
     overflow: scroll; }
-  .product-img {
+  .wish-table .product-img {
     margin-right: 0;
     margin-top: 5%; }
   .product-description {
@@ -1842,15 +1851,25 @@ body {
     width: 60px;
     font-size: 7px;
     font-weight: 600; }
+  .wish-table .options-add-to-cart {
+    width: 56px;
+    font-size: 6px; }
+  .mobile-slider .tab-item-options {
+    margin-bottom: 24px; }
   .options-add-to-cart {
-    width: 90px;
-    font-size: 10px; }
+    width: 90px; }
   .options-item-btn {
     margin: 5px; }
   .footer-form-btn {
     right: 10px; }
   .mobile-hidden {
-    display: none; } }
+    display: none; }
+  .top-left-menu {
+    width: 20%; }
+  .logo-link img {
+    height: 18px; }
+  .wishlist-section-title .section-title {
+    font-size: 16px; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .wrapper {
@@ -1920,6 +1939,7 @@ body {
   .mobile-close,
   .hamburger-menu {
     display: none; }
+  .wishlist-block:hover > .cart-list-block,
   .cart-block:hover > .cart-list-block {
     display: flex; } }
 

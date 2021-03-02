@@ -2,13 +2,14 @@
 
 const currencySelect = document.getElementById('currency-select'),
 	currencySelectActive = currencySelect.querySelector('.active'),
-	cartList = document.querySelector('.cart-list'),
 	wishlistLink = document.querySelector('.wishlist-link'),
-	cartListItems = document.querySelectorAll('.cart-list-item');
+	cartBlock = document.querySelector('.cart-block'),
+	cartList = cartBlock.querySelector('.cart-list'),
+	cartListItems = cartBlock.querySelectorAll('.cart-list-item');
 
-const addDataToStorege = (elemCollection, data, title, image, storageDataName) => {
+const addDataToStorege = (elemCollection, title, image, storageDataName) => {
 	if (elemCollection.length > 0) {
-		data = [];
+		const data = [];
 		
 		elemCollection.forEach(item => {
 			let newData = {
@@ -23,7 +24,7 @@ const addDataToStorege = (elemCollection, data, title, image, storageDataName) =
 	}
 };
 
-const renderCartFromLocalStorege = (renderData) => {
+const renderCartFromLocalStorege = (renderData, parentElem) => {
 	renderData.forEach(item => {
 		const newCartItem = document.createElement('li'),
 		cartImgBlock = document.createElement('div'),
@@ -54,17 +55,17 @@ const renderCartFromLocalStorege = (renderData) => {
 	cartImg.src = item.img;
 	cartPrice.textContent = item.price;
 	cartDescriptionTitle.textContent = item.title;
-	cartQuantityIcon.textContent = 'x';
+	cartQuantityIcon.textContent = ' x ';
 	newCloseIcon.src = './src/img/Close-icon.png';
-	cartQuantityProduct.textContent = '1';
+	cartQuantityProduct.textContent = '1 ';
 	
 	if( currencySelectActive.textContent === 'usd' ) {
-		currencyIcon.textContent = '€';
+		currencyIcon.textContent = '€ ';
 	} else {
-		currencyIcon.textContent = '$';
+		currencyIcon.textContent = '$ ';
 	}
 
-	cartList.append(newCartItem);
+	parentElem.append(newCartItem);
 	newCartItem.append(cartImgBlock);
 	cartImgBlock.append(cartImg);
 
@@ -84,8 +85,12 @@ const renderCartFromLocalStorege = (renderData) => {
 };
 
 wishlistLink.addEventListener('click', () => {
-	const cartListItems = document.querySelectorAll('.cart-list-item');
-	addDataToStorege(cartListItems, 'data1', '.cart-description-title', '.cart-item-img > img', 'cartData');
+	const cartBlock = document.querySelector('.cart-block'),
+		wishlistBlock = document.querySelector('.wishlist-block'),
+		wishlistCartItems = wishlistBlock.querySelectorAll('.cart-list-item'),
+		cartListItems = cartBlock.querySelectorAll('.cart-list-item');
+	addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
+	addDataToStorege(wishlistCartItems, '.cart-description-title', '.cart-item-img > img', 'wishlistData');
 });
 
 if (sessionStorage.cartData) {
@@ -93,16 +98,15 @@ if (sessionStorage.cartData) {
 	cartListItems.forEach(item => {
 		item.remove();
 	});
-		renderCartFromLocalStorege(cartStoregeData);
+		renderCartFromLocalStorege(cartStoregeData, cartList);
 }
 
 const removeStorageItem = (index, storageDataName) => {
-	if (sessionStorage.cartData) {
-		let dataArr = JSON.parse(sessionStorage.cartData);
-
+	if (sessionStorage.getItem(storageDataName)) {
+		let dataArr = JSON.parse(sessionStorage.getItem(storageDataName));
 		dataArr.splice(index, 1);
 		sessionStorage.setItem(storageDataName, JSON.stringify(dataArr));
 	} 
 };
 
-export {addDataToStorege, removeStorageItem};
+export {addDataToStorege, removeStorageItem, renderCartFromLocalStorege};
