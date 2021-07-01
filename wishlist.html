@@ -38,7 +38,7 @@
 							<li class="account-list-item"><a class="account-list-link" href="#">My account</a></li>
 							<li class="account-list-item"><a class="account-list-link" href="#">Wishlist</a></li>
 							<li class="account-list-item"><a class="account-list-link" href="#">My Cart</a></li>
-							<li class="account-list-item"><a class="account-list-link" href="#">Sign Out</a></li>
+							<li class="account-list-item"><a class="account-list-link" id="sign-out" href="#">Sign Out</a></li>
 						</ul>
 					</div>
 
@@ -275,6 +275,38 @@
 				</tr>
 			</table>
 		</div>
+
+		<section class="popup-section">
+			<div class="login-register-block">
+				<div class="login-register-nav">
+					<button class="login-register-btn active">Login</button>
+					<button class="login-register-btn">Register</button>
+				</div>
+
+				<div class="login-register-content">
+					<div class="login-content">
+						<form class="login-register-form login-form" id="login-form" action="">
+							<input id="login-name" type="text" placeholder="User Name">
+							<input id="login-password" type="password" placeholder="Password">
+							<a class="lost-password-link" href="#"> Lost Your Password? </a>
+							<label> <input class="remember-check" type="checkbox"> Remember Me </label>
+							<button class="register-btn" id="login-btn" type="submit">Login</button>
+						</form>
+					</div>
+
+					<div class="register-content">
+						<form class="login-register-form register-form" id="register-form" action="">
+							<input id="user-name" type="text" placeholder="User Name">
+							<input id="user-email" type="email" placeholder="Email">
+							<input id="user-password" type="password" placeholder="Password">
+							<input id="user-repeat-password" type="password" placeholder="Repeat Password">
+
+							<button class="register-btn" type="submit">Register</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 

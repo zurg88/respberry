@@ -50,7 +50,7 @@ const projectAnimations = () => {
 		 megaMenu = document.querySelector('.mega-menu'),
 		 searchForm = document.querySelector('.search-form'),
 		 searchOpenbtn = document.querySelector('.search-open'),
-		 megaMenuBlock = document.querySelectorAll('.mega-menu-block');
+		 megaMenuBlock = document.querySelectorAll('.mega-menu-block');		
 
 	const changeElemWidth = (elem, width, delay) => {
 		const widthPart = width / 50;

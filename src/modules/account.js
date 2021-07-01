@@ -21,7 +21,7 @@ const account = () => {
 		loginPassword = document.getElementById('login-password'),
 		rememberCheck = document.querySelector('.remember-check'),
 		accountList = document.querySelector('.account-list');
-
+	
 	const renderUserData = () => {
 
 		if(localStorage.userdata) {
@@ -52,8 +52,7 @@ const account = () => {
 	};
 
 	signInLink.addEventListener('click', () => {
-
-		if(signInLink.textContent === 'sign in') {
+		if(signInLink.textContent === 'SIGN IN') {
 			popupSection.classList.add('show-popup');
 			document.addEventListener('wheel', preventScroll, {passive: false});
 			renderUserData();
