@@ -58,7 +58,6 @@ const account = () => {
 			document.addEventListener('wheel', preventScroll, {passive: false});
 			renderUserData();
 		}
-		
 	});
 
 	popupSection.addEventListener('click', (event) => {
@@ -99,7 +98,6 @@ const account = () => {
 
 	const setUserData = (name, email, password, rememberUser = false) => {
 		let data = {};
-
 		if (localStorage.userdata) {
 			data = JSON.parse(localStorage.userdata);
 		}
