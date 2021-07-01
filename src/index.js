@@ -14,7 +14,7 @@ import tabs from './modules/tabs';
 import mobileMenu from './modules/mobile-menu';
 import changeCurrency from './modules/currency';
 import wishlist from './modules/wishlist';
-
+import account from './modules/account';
 
 // Animations
 projectAnimations();
@@ -59,6 +59,8 @@ changeCurrency();
 
 wishlist();
 
+// Account
 
+account();
 
  

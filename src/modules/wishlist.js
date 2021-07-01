@@ -56,7 +56,6 @@ const wishlist = () => {
 			const wishlistCartItems = wishlistBlock.querySelectorAll('.cart-list-item');
 			itemsValue.textContent = '( ' + wishlistCartItems.length + ' )';
 			checkIsEmpty(wishlistCartListBlock , wishlistCartItems, 'wishlist is empty');
-			console.log('!');
 		} else {
 			const tableRow = document.querySelectorAll('.table-row');
 			itemsValue.textContent = '( ' + tableRow.length + ' )';

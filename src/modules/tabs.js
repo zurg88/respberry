@@ -4,7 +4,6 @@ const tabs = (tabsContainer) =>  {
 	try {
 		const tabsNav = tabsContainer.querySelectorAll('.tabs-nav-btn'),
 		  tabsCollection = tabsContainer.querySelectorAll('.tab');
-		  console.log(tabsCollection);
 
 	const activateTab = () => {
 		tabsCollection.forEach(item => {

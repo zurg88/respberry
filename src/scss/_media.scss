@@ -17,6 +17,7 @@
 		background-color: #fff;
 		z-index: 20;
 		height: 7vh;
+		border-bottom: 3px solid $accent-color;
 	}
 
 	.nav-section {
@@ -36,6 +37,7 @@
 		height: 0;
 		margin: 0 20px;
 	}
+
 
 	.main-nav-open {
 		top: 7vh;
@@ -73,9 +75,41 @@
 	}
 
 	.brands-section,
-	.left-menu-select,
-	.account-menu {
+	.left-menu-select {
 		display: none;
+	}
+
+	.account-menu {
+		position: absolute;
+    	top: 7vh;
+		background-color: $accent-color;
+		padding: 0 10px;
+		z-index: 1;
+
+		&::after,
+		&::before  {
+			content: '';
+			position: absolute;
+			background-color: $accent-color;
+			width: 10%;
+			height: 100%;
+			bottom: 0;
+			transform: rotate(-15deg);
+			transform-origin: left;
+			border-radius: 3px;
+		}
+		&::before {
+			right: -4%;
+			transform: rotate(15deg);
+			transform-origin: right;
+		}
+		&::after {
+			left: -4%;
+		}
+	}
+
+	.account-list {
+		right: auto;
 	}
 
 	.top-left-menu {
