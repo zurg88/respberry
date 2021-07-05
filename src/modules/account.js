@@ -23,7 +23,6 @@ const account = () => {
 		accountList = document.querySelector('.account-list');
 	
 	const renderUserData = () => {
-
 		if(localStorage.userdata) {
 			if(rememberCheck || rememberCheck.checcked) {
 				const data = JSON.parse(localStorage.getItem('userdata'));
@@ -52,7 +51,8 @@ const account = () => {
 	};
 
 	signInLink.addEventListener('click', () => {
-		if(signInLink.textContent === 'SIGN IN') {
+		const signInLinkText = signInLink.textContent;
+		if(signInLinkText.toLowerCase() === 'sign in') {
 			popupSection.classList.add('show-popup');
 			document.addEventListener('wheel', preventScroll, {passive: false});
 			renderUserData();
