@@ -2027,7 +2027,9 @@ body {
     line-height: 1; }
   .wishlist-section-title .section-title {
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  .login-register-btn {
+    width: 49%; } }
 
 @media (min-width: 280px) and (max-width: 320px) {
   .caption-btn {
