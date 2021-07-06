@@ -1,6 +1,7 @@
 .main-footer {
 	background-color: $dark-color;
 	color: #fff;
+	position: relative;
 }
 
 .footer-section {
@@ -81,4 +82,37 @@
 	font-weight: 700;
 	position: absolute;	
 	right: 90px;
+}
+
+.popup-thanks-subscribe {
+	@include flex;
+	justify-content: center;
+	background-color: $popupBackground;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	bottom: 0;
+	color: $dark-color;
+}
+
+.thanks-subscribe {
+	background-color: #fff;
+	text-align: center;
+	border-bottom: 3px solid #ff0054;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+.thanks-subscribe-text {
+	margin-bottom: 20px;
+}
+
+.thanks-btn {
+	text-align: center;
+    color: #fff;
+    background-color: #3a3a3a;
+    line-height: 2.8;
+    font-weight: 800;
+	width: 90%;
 }

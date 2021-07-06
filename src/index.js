@@ -15,6 +15,7 @@ import mobileMenu from './modules/mobile-menu';
 import changeCurrency from './modules/currency';
 import wishlist from './modules/wishlist';
 import account from './modules/account';
+import subscribe from './modules/subscribe';
 
 // Animations
 projectAnimations();
@@ -62,5 +63,9 @@ wishlist();
 // Account
 
 account();
+
+// Subscribe form
+
+subscribe();
 
  
