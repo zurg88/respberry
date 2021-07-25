@@ -4,6 +4,7 @@
 @import './main-header';
 @import './footer.scss';
 @import '../libs/swiper/swiper';
+@import '../libs/noUiSlider-15.2.0/dist/nouislider.css';
 @import '../libs/swiper/components/navigation/navigation.scss';
 @import '../libs/swiper/components/pagination/pagination.scss';
 @import '../libs/swiper/components/effect-flip/effect-flip.scss';
@@ -12,6 +13,7 @@
 @import './hamburger.scss';
 @import './wishlist.scss';
 @import './account';
+@import './shop';
 @import '../fonts/poppins/poppins.css';
 @import '../fonts/fontello-icons/fontello-608a65cf/css/fontello.css';
 

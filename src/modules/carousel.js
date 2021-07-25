@@ -28,10 +28,10 @@ const carousel = () => {
 
   mobileSliders.forEach(item => {
 	let mobileSlider = new Swiper(item, {
-		// autoplay: {
-		// 	delay: 2500,
-		// 	disableOnInteraction: false,
-		//   },
+		autoplay: {
+			delay: 3500,
+			disableOnInteraction: false,
+		  },
 		  slidesPerView: 1,
 		  loop: true,
 		  width: document.querySelector('.swiper-container').getBoundingClientRect().width,

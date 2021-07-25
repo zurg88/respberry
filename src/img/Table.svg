@@ -1,0 +1,15 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" width="37" height="37">
+	<title>Table</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #ebebeb } 
+		.shp1 { fill: #8b8b8b } 
+	</style>
+	<g id="Table">
+		<path id="Rectangle" class="shp0" d="M0 0L37 0L37 37L0 37L0 0Z" />
+		<path id="Rectangle" class="shp1" d="M11 11L17 11L17 17L11 17L11 11Z" />
+		<path id="Rectangle" class="shp1" d="M20 11L26 11L26 17L20 17L20 11Z" />
+		<path id="Rectangle" class="shp1" d="M11 20L17 20L17 26L11 26L11 20Z" />
+		<path id="Rectangle" class="shp1" d="M20 20L26 20L26 26L20 26L20 20Z" />
+	</g>
+</svg>
