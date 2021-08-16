@@ -17,10 +17,41 @@
 	}
 }
 
+.product-list-table-view {
+	@include flex;
+	flex-wrap: wrap;
+	justify-content: start;
+
+	.product-list-item {
+		flex-direction: column;
+		max-width: 30%;
+		margin-right: 25px;
+		border-bottom: none;
+	}
+
+	.product-description {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.product-description-text {
+		display: none;
+	}
+
+	.product-description-options {
+		width: 100%;
+	}
+
+	.product-image-block {
+		margin-right: 0;
+	}
+}
+
 .product-list-item {
 	padding: 30px 0;
 	border-bottom: 1px solid $gray-border;
-	
+	transition: all .3s;
 }
 
 .shop-content-header {
