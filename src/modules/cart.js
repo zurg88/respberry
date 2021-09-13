@@ -5,7 +5,7 @@ import { addDataToStorege, removeStorageItem} from './localStorege';
 
 const getParams = (elem, parentElemSell) => {
 	const parentElem = elem.closest(parentElemSell);
-			const	elemImg = parentElem.querySelector('.product-img'),
+			const elemImg = parentElem.querySelector('.product-img'),
 				elemTitle = parentElem.querySelector('.product-title > a'),
 				elemPrie = parentElem.querySelector('.price');	
 	return [elemImg, elemPrie, elemTitle];
@@ -83,8 +83,8 @@ const cart = () => {
 		cartIconBlock = document.querySelector('.cart-icon-block'),
 		mobileCloseBtn = document.querySelector('.mobile-close'),
 		addToCartBtn = document.querySelectorAll('.options-add-to-cart'),
-		currencySelect = document.getElementById('currency-select'),
-		currencySelectActive = currencySelect.querySelector('.active');
+		currencySelect = document.getElementById('currency-select');
+
 		
 		const showCartListItems = () => {
 			const cartListItems = document.querySelectorAll('.cart-list-item');
@@ -172,7 +172,8 @@ const cart = () => {
 		}
 
 	const addToCart = (elem) => {
-		if ( !document.body.classList.contains('wishlist-body') ) {
+		
+		if ( !document.body.classList.contains('wishlist-body') && !document.body.classList.contains('shop-page') ) {
 			if (window.matchMedia("(min-width: 1025px)").matches) {
 				cteateCartItem(...getParams(elem, '.tab-list-item'), cartList);
 			}
@@ -181,6 +182,11 @@ const cart = () => {
 					cteateCartItem(...getParams(elem, '.swiper-slide'), cartList);
 			}
 		}
+
+		if (document.body.classList.contains('shop-page')) {
+			cteateCartItem(...getParams(elem, '.product-list-item'), cartList);
+		}
+		
 		getcartItemsValue();
 		removeCartItem();
 		cartTotalPrice();

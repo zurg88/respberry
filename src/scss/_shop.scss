@@ -20,7 +20,7 @@
 .product-list-table-view {
 	@include flex;
 	flex-wrap: wrap;
-	justify-content: start;
+	justify-content: space-around;
 
 	.product-list-item {
 		flex-direction: column;
@@ -81,6 +81,39 @@
 	max-width: 260px;
 	margin-right: 30px;
 	align-self: start;
+	transition: all .4s;
+	position: relative;
+}
+
+.mobile-filter-button {
+	color: $dark-color;
+	width: 50px;
+	height: 70px;
+	text-align: center;
+	align-self: flex-end;
+	position: fixed;
+	right: 88%;
+	top: 40%;
+	font-size: 30px;
+	background-color: $accent-color;
+	border-radius: 3px;
+}
+
+.mobile-filter-button::after, .mobile-filter-button::before {
+	content: '';
+	position: absolute;
+	background-color: $accent-color;
+	width: 50px;
+	border-radius: 5px;
+}
+
+.mobile-filter-button::after {
+	bottom: -21px;
+    transform: rotate(-33deg);
+    z-index: 1000;
+    height: 29px;
+    left: -20px;
+    width: 70px;
 }
 
 .showing-results-text {

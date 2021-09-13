@@ -86,12 +86,19 @@ const wishlist = () => {
 		}
 		
 		if (window.matchMedia("(min-width: 1025px)").matches) {
-			cteateCartItem(...getParams(item, '.tab-list-item'), wishlistCartList);
+			if (document.body.classList.contains('shop-page')) {
+				cteateCartItem(...getParams(item, '.product-list-item'), wishlistCartList);
+			} else {
+				cteateCartItem(...getParams(item, '.tab-list-item'), wishlistCartList);
+			}
+			
 		}
 		
 		if (window.matchMedia("(max-width: 1024px)").matches) {
 			cteateCartItem(...getParams(item, '.swiper-slide'), wishlistCartList);
 		}
+
+		
 		showWishListCartItems();
 		wishlistItemsValue();
 		removeWishlistCartItems();
