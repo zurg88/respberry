@@ -6,7 +6,6 @@ const subscribe = () => {
 	footerFormInput = document.querySelector('.footer-form-input'),
 	thanksBtn = document.querySelector('.thanks-btn');
 
-
 	const preventScroll = event => {
 		event.preventDefault();
 	};

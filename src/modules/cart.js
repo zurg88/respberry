@@ -7,8 +7,8 @@ const getParams = (elem, parentElemSell) => {
 	const parentElem = elem.closest(parentElemSell);
 			const elemImg = parentElem.querySelector('.product-img'),
 				elemTitle = parentElem.querySelector('.product-title > a'),
-				elemPrie = parentElem.querySelector('.price');	
-	return [elemImg, elemPrie, elemTitle];
+				elemPrice = parentElem.querySelector('.price');	
+	return [elemImg, elemPrice, elemTitle];
 };
 
 const cteateCartItem = (elemImage, elemPrice, elemTitle, parentElem) => {
@@ -83,7 +83,8 @@ const cart = () => {
 		cartIconBlock = document.querySelector('.cart-icon-block'),
 		mobileCloseBtn = document.querySelector('.mobile-close'),
 		addToCartBtn = document.querySelectorAll('.options-add-to-cart'),
-		currencySelect = document.getElementById('currency-select');
+		quickViewSection = document.querySelector('.quick-view-section'),
+		quickViewSectionBtn = quickViewSection.querySelector('.quick-view-Btn');
 
 		
 		const showCartListItems = () => {
@@ -115,7 +116,6 @@ const cart = () => {
 					const itemParentElement = item.closest('.cart-list-item');
 					const itemsArr = [...cartListItems];
 					const elemIndex = itemsArr.indexOf(itemParentElement);
-					console.log(elemIndex);
 					removeStorageItem(elemIndex, 'cartData');
 					itemParentElement.remove();
 					cartTotalPrice();
@@ -196,17 +196,48 @@ const cart = () => {
 		addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
 	};
 
+	const addToCartFromQuickViewSection = (elem) => {
+		if (quickViewSection.classList.contains('show-quick-view')) {
+			cteateCartItem(...getParams(elem, '.quick-view-block'), cartList);
+		}
+
+		getcartItemsValue();
+		removeCartItem();
+		cartTotalPrice();
+		showCartListItems();
+
+		const cartListItems = cartBlock.querySelectorAll('.cart-list-item');
+		addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
+	};
+
+	const checkIsEmptyCart = () => {
+		if ( cartListBlock.querySelector('.cart-empty-el') ) {
+			cartListBlock.querySelector('.cart-empty-el').remove();
+		}
+	};
+
+	const checkCartDeliveryPrice = () => {
+		if ( shippingPriceValue.textContent === '0') {
+			shippingPriceValue.textContent = '7';
+		}
+	};
+
 	addToCartBtn.forEach(item => {
 		item.addEventListener('click', () => {
-			if ( cartListBlock.querySelector('.cart-empty-el') ) {
-				cartListBlock.querySelector('.cart-empty-el').remove();
-			}
+
+			checkIsEmptyCart();
+			checkCartDeliveryPrice();
 			
-			if ( shippingPriceValue.textContent === '0') {
-				shippingPriceValue.textContent = '7';
-			}
 			addToCart(item);
 		});
+	});
+
+	quickViewSectionBtn.addEventListener('click', () => {
+
+		checkIsEmptyCart();
+		checkCartDeliveryPrice();
+
+		addToCartFromQuickViewSection(quickViewSectionBtn);
 	});
 	
 };

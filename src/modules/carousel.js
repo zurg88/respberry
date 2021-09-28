@@ -1,3 +1,4 @@
+'use strict';
 import Swiper from 'swiper/bundle';
 
 const carousel = () => {

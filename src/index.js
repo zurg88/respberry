@@ -17,6 +17,7 @@ import wishlist from './modules/wishlist';
 import account from './modules/account';
 import subscribe from './modules/subscribe';
 import filters from './modules/shop-filters';
+import quickView from './modules/quick-view';
 
 import noUiSlider from 'nouislider';
 
@@ -91,3 +92,5 @@ subscribe();
 // Shop Filters
 filters();
 
+// quick View
+quickView();

@@ -22,6 +22,7 @@ const wishlist = () => {
 		wishlistBlock = document.querySelector('.wishlist-block'),
 		wishlistCartListBlock = wishlistBlock.querySelector('.cart-list-block'),
 		wishlistCartList = wishlistBlock.querySelector('.cart-list'),
+		quickViewSection = document.querySelector('.quick-view-section'),
 		wishTable = document.querySelector('.wish-table');
 
 	const showWishListCartItems = () => {
@@ -88,7 +89,9 @@ const wishlist = () => {
 		if (window.matchMedia("(min-width: 1025px)").matches) {
 			if (document.body.classList.contains('shop-page')) {
 				cteateCartItem(...getParams(item, '.product-list-item'), wishlistCartList);
-			} else {
+			} else if(quickViewSection.classList.contains('show-quick-view')) {
+				cteateCartItem(...getParams(item, '.quick-view-block'), wishlistCartList);
+			}else{
 				cteateCartItem(...getParams(item, '.tab-list-item'), wishlistCartList);
 			}
 			
