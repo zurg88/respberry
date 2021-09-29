@@ -94,14 +94,12 @@ const wishlist = () => {
 			}else{
 				cteateCartItem(...getParams(item, '.tab-list-item'), wishlistCartList);
 			}
-			
 		}
 		
 		if (window.matchMedia("(max-width: 1024px)").matches) {
 			cteateCartItem(...getParams(item, '.swiper-slide'), wishlistCartList);
 		}
 
-		
 		showWishListCartItems();
 		wishlistItemsValue();
 		removeWishlistCartItems();
@@ -203,8 +201,7 @@ const wishlist = () => {
 					addDataToStorege(wishTableRows, '.product-title', '.product-img', 'wishlistData');
 					wishlistItemsValue();
 				});
-			});
-			
+			});	
 		}
 	};
 
@@ -239,12 +236,9 @@ const wishlist = () => {
 			createMessageForWishTable();
 			wishlistItemsValue();
 		}
-		
 	};
 
 	renderWishlstTable();
-
-	
 
 	wishlistCloseTableRow();
 
