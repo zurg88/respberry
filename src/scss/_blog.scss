@@ -1,0 +1,104 @@
+.blog-page .content-section {
+	align-items: start;
+}
+
+.blog-left-sidebar {
+	max-width: 295px;
+	padding-right: 20px;
+}
+
+.content-section,
+.recent-post-link {
+	@include flex;
+	justify-content: center;
+}
+
+.recent-post-link {
+	align-items: start;
+}
+
+.recent-posts-list,
+.blog-left-sidebar,
+.recent-post-description {
+	@include flex-column;
+}
+
+.about-author-text {
+	line-height: 24px;
+	font-size: 13px;
+	color: $gray-text;
+}
+
+.aside-search-input {
+	width: 100%;
+	line-height: 50px;
+	border: 1px solid $gray-border;
+	padding-left: 10px;
+}
+
+.recent-posts-item {
+	@include flex;
+	justify-content: start;
+	margin-bottom: 20px;
+}
+
+.recent-post-title {
+	font-size: 14px;
+	margin-top: 0;
+}
+
+.recent-post-date {
+	font-size: 12px;
+	color: $gray-text;
+}
+
+.recent-post-img {
+	margin-right: 20px;
+}
+
+.blog-post-img-block {
+	position: relative;
+}
+
+.blog-post-date {
+	position: absolute;
+	left: 20px;
+	bottom: -20px;
+	width: 90px;
+	height: 90px;
+	color: #fff;
+	background-color: $dark-color;
+	@include flex-column;
+	text-align: center;
+}
+
+.post-date-day {
+	font-size: 36px;
+	border-bottom: 4px solid #fff;
+	margin: 0 25px;
+	font-weight: 600;
+}
+
+.blog-post-title-link {
+	transition: all .3s ease-in-out;
+	&:hover {
+		text-decoration: underline;
+		color: $accent-color;
+	}
+}
+
+.blog-post-title {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.blog-post-comments {
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.blog-post-description {
+	font-size: 13px;
+	line-height: 24px;
+	color: $gray-text;
+}

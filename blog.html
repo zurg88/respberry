@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Respberry</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body class="blog-page">
+
+        <header class="main-header">
+            <div class="wrapper">
+
+                <div class="top-menu">
+                    <div class="top-left-menu">
+                        <ul class="left-menu-select currency-select" id="currency-select">
+                            <li class="active select-item"></li>
+                            <li class="select-item">usd</li>
+                            <li class="select-item">eur</li>
+                        </ul>
+
+                        <div class="wishlist-block">
+                            <a class="wishlist-link" href="./wishlist.html">
+                                <img src="./src/img/Like.png" alt="wishlist">
+                                <span class="items-value">(4)</span>
+                            </a>
+
+                            <div class="cart-list-block">
+                                <ul class="cart-list">
+                                    <li class="cart-list-item">
+                                        <div class="cart-item-img">
+                                            <img class="product-img img-responsive" src="./src/img/Photo-wish-1.png" alt="photo">
+                                        </div>
+
+                                        <div class="cart-description-block">
+                                            <p class="cart-description">
+                                                <span class="cart-quantity-product">1</span>
+                                                <span>x</span>
+                                                <span class="cart-description-title">Long Wool overcoat</span>
+                                            </p>
+
+                                            <p class="product-price">
+                                                <span class="currency-icon">$</span>
+                                                <span class="cart-price price">130</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="cart-item-close-icon">
+                                            <img src="./src/img/Close-icon.png" alt="close">
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-list-item">
+                                        <div class="cart-item-img">
+                                            <img class="product-img img-responsive" src="./src/img/Photo-wish-1.png" alt="photo">
+                                        </div>
+
+                                        <div class="cart-description-block">
+                                            <p class="cart-description">
+                                                <span class="cart-quantity-product">1</span>
+                                                <span>x</span>
+                                                <span class="cart-description-title">Long Wool overcoat</span>
+                                            </p>
+
+                                            <p class="product-price">
+                                                <span class="currency-icon">$</span>
+                                                <span class="cart-price price">130</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="cart-item-close-icon">
+                                            <img src="./src/img/Close-icon.png" alt="close">
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-list-item">
+                                        <div class="cart-item-img">
+                                            <img class="product-img img-responsive" src="./src/img/Photo-wish-1.png" alt="photo">
+                                        </div>
+
+                                        <div class="cart-description-block">
+                                            <p class="cart-description">
+                                                <span class="cart-quantity-product">1</span>
+                                                <span>x</span>
+                                                <span class="cart-description-title">Long Wool overcoat</span>
+                                            </p>
+
+                                            <p class="product-price">
+                                                <span class="currency-icon">$</span>
+                                                <span class="cart-price price">130</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="cart-item-close-icon">
+                                            <img src="./src/img/Close-icon.png" alt="close">
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-list-item">
+                                        <div class="cart-item-img">
+                                            <img class="product-img img-responsive" src="./src/img/Photo-wish-2.png" alt="photo">
+                                        </div>
+
+                                        <div class="cart-description-block">
+                                            <p class="cart-description">
+                                                <span class="cart-quantity-product">1</span>
+                                                <span>x</span>
+                                                <span class="cart-description-title">Long Wool overcoat</span>
+                                            </p>
+
+                                            <p class="product-price">
+                                                <span class="currency-icon">$</span>
+                                                <span class="cart-price price">130</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="cart-item-close-icon">
+                                            <img src="./src/img/Close-icon.png" alt="close">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo"> <a class="logo-link" href="./index.html"><img src="./src/img/Logo.svg" alt="Raspberry"></a> </div>
+
+                    <div class="account-menu">
+                        <div class="user-menu-container">
+                            <a class="user-link account-link" href="#">JOIN FREE</a>
+                            <ul class="account-list">
+                                <li class="account-list-item"><a class="account-list-link" href="#">My account</a></li>
+                                <li class="account-list-item"><a class="account-list-link" href="#">Wishlist</a></li>
+                                <li class="account-list-item"><a class="account-list-link" href="#">My Cart</a></li>
+                                <li class="account-list-item"><a class="account-list-link" id="sign-out" href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+
+                        <span class="slash">&frasl;</span> 
+                        <a class="account-link sign-in-link" href="#">SIGN IN</a>
+
+                    </div>
+
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                </div>
+            </div>
+
+                <section class="nav-section">
+                    <div class="wrapper main-navigation">
+                        <div class="search-block">
+                            <button class="search-open">
+                                <img src="./src/img/Search.svg" alt="search">
+                            </button>
+
+                            <div class="search-dropdown">
+                                <form class="search-form">
+                                    <input class="search-input" type="search" id="search">
+                                    <label for="search">
+                                        <button class="search-submit">
+                                            <img src="./src/img/Arrow-search.svg" alt="search">
+                                        </button>
+                                    </label>
+                                </form>
+                            </div>
+                                
+                        </div>
+
+                        <nav class="main-nav">
+
+                            <ul class="nav-list">
+                                <li class="nav-list-item"><a class="main-nav-link active-nav-link" href="#">Home</a></li>
+        
+                                <li class="nav-list-item mega-menu mobile-hidden">
+                                    <a class="main-nav-link" href="./shop.html">Clothing</a>
+
+                                    <div class="drop-down-mega-menu">
+                                        <div class="mega-menu-block">
+                                            <div class="mega-menu-block-title"> <h3>Womens</h3> </div>
+
+                                            <ul class="mega-menu-list">
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jacket</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Coats</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Parka</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-menu-block">
+                                            <div class="mega-menu-block-title"> <h3>Mens</h3> </div>
+
+                                            <ul class="mega-menu-list">
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jacket</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Coats</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Parka</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-menu-block">
+                                           <div class="mega-menu-block-title"><h3>Children</h3></div> 
+
+                                            <ul class="mega-menu-list">
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Blazers</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Jacket</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Coats</a></li>
+                                                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Parka</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-menu-block sale-block">
+                                            <div class="sale">
+                                                <img src="./src/img/Sale-img.jpg" alt="sale">
+                                                <div class="sale-info">
+                                                    <p>Sale</p>
+                                                    <p>15%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-list-item dresses">
+                                    <a class="main-nav-link" href="./shop.html">Dresses</a>
+
+                                    <ul class="drop-down-menu mobile-hidden">
+                                        <li class="dropdown-menu-item"> <a class="dropdown-link" href="#">For Men</a> </li>
+                                        <li class="dropdown-menu-item"> <a class="dropdown-link" href="#">For Women</a> </li>
+                                        <li class="dropdown-menu-item"> <a class="dropdown-link" href="#">For Children</a> </li>
+                                        <li class="dropdown-menu-item"> <a class="dropdown-link" href="#">More</a> </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-list-item"><a class="main-nav-link" href="#">Shoes</a></li>
+                                <li class="nav-list-item"><a class="main-nav-link" href="#">Accessories</a></li>
+                                <li class="nav-list-item"><a class="main-nav-link" href="#">Blog</a></li>
+                                <li class="nav-list-item"><a class="main-nav-link" href="#">Contact us</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="cart-block">
+                            <div class="cart-icon-block">
+                                <img class="cart-icon" src="./src/img/Cart.svg" alt="cart">
+                                <span class="cart-items">0</span>
+                            </div>
+
+                            <div class="cart-list-block">
+                                <ul class="cart-list">
+                                    <li class="cart-list-item">
+                                        <div class="cart-item-img">
+                                            <img src="./src/img/Photo-bag.png" alt="photo">
+                                        </div>
+
+                                        <div class="cart-description-block">
+                                            <p class="cart-description">
+                                                <span class="cart-quantity-product">1</span>
+                                                <span>x</span>
+                                                <span class="cart-description-title">Leather bag for clothes</span>
+                                            </p>
+
+                                            <p class="product-price">
+                                                <span class="currency-icon">$</span>
+                                                <span class="cart-price price">130</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="cart-item-close-icon">
+                                            <img src="./src/img/Close-icon.png" alt="close">
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-list-item">
+                                        <div class="cart-item-img">
+                                            <img src="./src/img/Photo-bag.png" alt="photo">
+                                        </div>
+
+                                        <div class="cart-description-block">
+                                            <p class="cart-description">
+                                                <span class="cart-quantity-product">1</span>
+                                                <span>x</span>
+                                                <span class="cart-description-title">Leather bag for clothes</span>
+                                            </p>
+
+                                            <p class="product-price">
+                                                <span class="currency-icon">$</span>
+                                                <span class="cart-price price">130</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="cart-item-close-icon">
+                                            <img src="./src/img/Close-icon.png" alt="close">
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-list-item">
+                                        <div class="cart-item-img">
+                                            <img src="./src/img/Photo-bag.png" alt="photo">
+                                        </div>
+
+                                        <div class="cart-description-block">
+                                            <p class="cart-description">
+                                                <span class="cart-quantity-product">1</span>
+                                                <span>x</span>
+                                                <span class="cart-description-title">Leather bag for clothes</span>
+                                            </p>
+
+                                            <p class="product-price">
+                                                <span class="currency-icon">$</span>
+                                                <span class="cart-price price">130</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="cart-item-close-icon">
+                                            <img src="./src/img/Close-icon.png" alt="close">
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="total-price-block">
+                                    <div class="total-price-title">
+                                        <span>Shipping</span>
+                                        <span>Total</span>
+                                    </div>
+
+                                    <div class="total-price">
+                                        <p class="shipping-price">
+                                            <span class="currency-icon">$</span>
+                                            <span class="shipping-price-value price">7.00</span>
+                                        </p>
+
+                                        <p class="total-price-value">
+                                            <span class="currency-icon">$</span>
+                                            <span class="total-value price">130.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <button class="view-cart-button">View my shopping cart</button>
+
+                                <div class="mobile-close">
+                                    <img src="./src/img/Close-icon.png" alt="close">
+                                    <span>Close</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        </header>
+
+        <main class="main-content">
+            <div class="wrapper">
+
+				<section class="content-section">
+					<aside class="blog-left-sidebar">
+
+						<div class="aside-search-blog-page">
+							<h3 class="sidebar-title">Search</h3>
+							<form class="aside-search-form">
+								<input class="aside-search-input" type="search" placeholder="Enter keyword...">
+							</form>
+						</div>
+
+						<div class="about-author">
+							<h3 class="sidebar-title">About author</h3>
+
+							<img src="./src/img/Photo-author.jpg" alt="photo">
+							<p class="about-author-text">
+								Lorem ipsum dolor,
+								sit amet consectetur adipisicing elit.
+								Soluta exercitationem deserunt recusandae repudiandae
+								accusantium consequatur error laborum.
+							</p>
+						</div>
+
+						<div class="product-categories-block">
+                            <h3 class="sidebar-title">Product categories</h3>
+
+                            <ul class="product-categories-list">
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Accessories</a> <span class="quantity-of-goods">(8)</span> </li>
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Bags</a> <span class="quantity-of-goods">(2)</span> </li>
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Boots</a> <span class="quantity-of-goods">(1)</span> </li>
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Footwear</a> <span class="quantity-of-goods">(2)</span> </li>
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Jackets</a> <span class="quantity-of-goods">(8)</span> </li>
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Mens</a> <span class="quantity-of-goods">(5)</span> </li>
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Paints</a> <span class="quantity-of-goods">(8)</span> </li>
+                                <li class="product-categories-item"> <a class="product-categories-link" href="#">Womens</a> <span class="quantity-of-goods">(5)</span> </li>
+                            </ul>
+                        </div>
+
+						<div class="recent-posts-block">
+							<h3 class="sidebar-title">Recent post</h3>
+
+							<ul class="recent-posts-list">
+								<li class="recent-posts-item">
+									<a href="#" class="recent-post-link">
+										<div class="recent-post-img">
+											<img src="./src/img/recent-post-img.jpg" alt="post-img">
+										</div>
+
+										<div class="recent-post-description">
+											<h4 class="recent-post-title">Lesther bag for clothes</h4>
+											<span class="recent-post-date">
+											August 4, 2017
+											</span>
+										</div>
+									</a>
+								</li>
+
+								<li class="recent-posts-item">
+									<a href="#" class="recent-post-link">
+										<div class="recent-post-img">
+											<img src="./src/img/recent-post-img-2.jpg" alt="post-img">
+										</div>
+
+										<div class="recent-post-description">
+											<h4 class="recent-post-title">Lesther bag for clothes</h4>
+											<span class="recent-post-date">
+												August 4, 2017
+											</span>
+										</div>
+									</a>
+								</li>
+
+								<li class="recent-posts-item">
+									<a href="#" class="recent-post-link">
+										<div class="recent-post-img">
+											<img src="./src/img/recent-post-img-3.jpg" alt="post-img">
+										</div>
+
+										<div class="recent-post-description">
+											<h4 class="recent-post-title">Lesther bag for clothes</h4>
+											<span class="recent-post-date">
+												August 4, 2017
+											</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="product-tags-block">
+                            <h3 class="sidebar-title">Product tags</h3>
+
+                            <ul class="product-tags-list">
+                                <li class="product-tags-item">Clothing</li>
+                                <li class="product-tags-item">Black</li>
+                                <li class="product-tags-item">Footwear</li>
+                                <li class="product-tags-item">Blue</li>
+                                <li class="product-tags-item">Accessories</li>
+                                <li class="product-tags-item">Womens</li>
+                                <li class="product-tags-item">Mens</li>
+                            </ul>
+                        </div>
+					
+					</aside>
+
+					<div class="blog-content">
+						<ul class="blog-posts-list">
+							<li class="blog-posts-list-item">
+								<div class="blog-post-img-block">
+									<img src="./src/img/Blog-Page-Photo.jpg" alt="photo">
+									<div class="blog-post-date">
+										<span class="post-date-day">01</span>
+										<span>
+											<span class="post-date-mounth">Dec</span>
+											<span class="post-date-year">2017</span>
+										</span>
+									</div>
+								</div>
+
+								<a class="blog-post-title-link" href="#">
+									<h3 class="blog-post-title">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Facere, repudiandae. Magnam ab cum autem, quos natus, 
+									eum consequuntur quasi voluptatibus qui pariatur consequatur 
+									molestiae.
+									</h3>
+								</a>
+								
+								<p class="blog-post-comments">
+									<span class="comments-quntity">1</span>
+									Comment(s)
+								</p>
+
+								<p class="blog-post-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Sed, non eum dignissimos magni obcaecati repellat, et nulla delectus 
+									enim eius iure dicta expedita cupiditate accusamus voluptate explicabo 
+									neque autem asperiores maiores. Voluptatum, repellat reiciendis possimus 
+									velit maxime placeat ipsam. Nisi, incidunt repudiandae necessitatibus 
+									ullam error dignissimos, culpa natus tempore cumque, velit provident quae?
+								</p>
+							</li>
+
+							<li class="blog-posts-list-item">
+								<div class="blog-post-img-block">
+									<img src="./src/img/Blog-Page-Photo2.jpg" alt="photo">
+									<div class="blog-post-date">
+										<span class="post-date-day">01</span>
+										<span>
+											<span class="post-date-mounth">Dec</span>
+											<span class="post-date-year">2017</span>
+										</span>
+									</div>
+								</div>
+
+								<a class="blog-post-title-link" href="#">
+									<h3 class="blog-post-title">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Facere, repudiandae. Magnam ab cum autem, quos natus, 
+									eum consequuntur quasi voluptatibus qui pariatur consequatur 
+									molestiae.
+									</h3>
+								</a>
+								
+								<p class="blog-post-comments">
+									<span class="comments-quntity">1</span>
+									Comment(s)
+								</p>
+
+								<p class="blog-post-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Sed, non eum dignissimos magni obcaecati repellat, et nulla delectus 
+									enim eius iure dicta expedita cupiditate accusamus voluptate explicabo 
+									neque autem asperiores maiores. Voluptatum, repellat reiciendis possimus 
+									velit maxime placeat ipsam. Nisi, incidunt repudiandae necessitatibus 
+									ullam error dignissimos, culpa natus tempore cumque, velit provident quae?
+								</p>
+							</li>
+
+							<li class="blog-posts-list-item">
+								<div class="blog-post-img-block">
+									<img src="./src/img/Blog-Page-Photo3.jpg" alt="photo">
+									<div class="blog-post-date">
+										<span class="post-date-day">01</span>
+										<span>
+											<span class="post-date-mounth">Dec</span>
+											<span class="post-date-year">2017</span>
+										</span>
+									</div>
+								</div>
+
+								<a class="blog-post-title-link" href="#">
+									<h3 class="blog-post-title">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Facere, repudiandae. Magnam ab cum autem, quos natus, 
+									eum consequuntur quasi voluptatibus qui pariatur consequatur 
+									molestiae.
+									</h3>
+								</a>
+								
+								<p class="blog-post-comments">
+									<span class="comments-quntity">1</span>
+									Comment(s)
+								</p>
+
+								<p class="blog-post-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Sed, non eum dignissimos magni obcaecati repellat, et nulla delectus 
+									enim eius iure dicta expedita cupiditate accusamus voluptate explicabo 
+									neque autem asperiores maiores. Voluptatum, repellat reiciendis possimus 
+									velit maxime placeat ipsam. Nisi, incidunt repudiandae necessitatibus 
+									ullam error dignissimos, culpa natus tempore cumque, velit provident quae?
+								</p>
+							</li>
+
+							<li class="blog-posts-list-item">
+								<div class="blog-post-img-block">
+									<img src="./src/img/Blog-Page-Photo4.jpg" alt="photo">
+									<div class="blog-post-date">
+										<span class="post-date-day">01</span>
+										<span>
+											<span class="post-date-mounth">Dec</span>
+											<span class="post-date-year">2017</span>
+										</span>
+									</div>
+								</div>
+
+								<a class="blog-post-title-link" href="#">
+									<h3 class="blog-post-title">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Facere, repudiandae. Magnam ab cum autem, quos natus, 
+									eum consequuntur quasi voluptatibus qui pariatur consequatur 
+									molestiae.
+									</h3>
+								</a>
+								
+								<p class="blog-post-comments">
+									<span class="comments-quntity">1</span>
+									Comment(s)
+								</p>
+
+								<p class="blog-post-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Sed, non eum dignissimos magni obcaecati repellat, et nulla delectus 
+									enim eius iure dicta expedita cupiditate accusamus voluptate explicabo 
+									neque autem asperiores maiores. Voluptatum, repellat reiciendis possimus 
+									velit maxime placeat ipsam. Nisi, incidunt repudiandae necessitatibus 
+									ullam error dignissimos, culpa natus tempore cumque, velit provident quae?
+								</p>
+							</li>
+
+							<li class="blog-posts-list-item">
+								<div class="blog-post-img-block">
+									<img src="./src/img/Blog-Page-Photo5.jpg" alt="photo">
+									<div class="blog-post-date">
+										<span class="post-date-day">01</span>
+										<span>
+											<span class="post-date-mounth">Dec</span>
+											<span class="post-date-year">2017</span>
+										</span>
+									</div>
+								</div>
+
+								<a class="blog-post-title-link" href="#">
+									<h3 class="blog-post-title">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Facere, repudiandae. Magnam ab cum autem, quos natus, 
+									eum consequuntur quasi voluptatibus qui pariatur consequatur 
+									molestiae.
+									</h3>
+								</a>
+								
+								<p class="blog-post-comments">
+									<span class="comments-quntity">1</span>
+									Comment(s)
+								</p>
+
+								<p class="blog-post-description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Sed, non eum dignissimos magni obcaecati repellat, et nulla delectus 
+									enim eius iure dicta expedita cupiditate accusamus voluptate explicabo 
+									neque autem asperiores maiores. Voluptatum, repellat reiciendis possimus 
+									velit maxime placeat ipsam. Nisi, incidunt repudiandae necessitatibus 
+									ullam error dignissimos, culpa natus tempore cumque, velit provident quae?
+								</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+                <section class="brands-section">
+                    <ul class="brands-list">
+                        <li class="brands-list-item">
+                            <img src="./src/img/Brand1.svg" alt="brand">
+                        </li>
+                        <li class="brands-list-item">
+                            <img src="./src/img/Brand2.svg" alt="brand">
+                        </li>
+                        <li class="brands-list-item">
+                            <img src="./src/img/Brand3.svg" alt="brand">
+                        </li>
+                        <li class="brands-list-item">
+                            <img src="./src/img/Brand4.svg" alt="brand">
+                        </li>
+                        <li class="brands-list-item">
+                            <img src="./src/img/Brand5.svg" alt="brand">
+                        </li>
+                        <li class="brands-list-item">
+                            <img src="./src/img/Brand6.svg" alt="brand">
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="mobile-popup-cart-list"></section>
+
+            <section class="popup-section">
+                <div class="login-register-block">
+                    <div class="login-register-nav">
+                        <button class="login-register-btn active">Login</button>
+                        <button class="login-register-btn">Register</button>
+                    </div>
+
+                    <div class="login-register-content">
+                        <div class="login-content">
+                            <form class="login-register-form login-form" id="login-form" action="">
+                                <input id="login-name" type="text" placeholder="User Name">
+                                <input id="login-password" type="password" placeholder="Password">
+                                <a class="lost-password-link" href="#"> Lost Your Password? </a>
+                                <label> <input class="remember-check" type="checkbox"> Remember Me </label>
+                                <button class="register-btn" id="login-btn" type="submit">Login</button>
+                            </form>
+                        </div>
+
+                        <div class="register-content">
+                            <form class="login-register-form register-form" id="register-form" action="">
+                                <input id="user-name" type="text" placeholder="User Name">
+                                <input id="user-email" type="email" placeholder="Email">
+                                <input id="user-password" type="password" placeholder="Password">
+                                <input id="user-repeat-password" type="password" placeholder="Repeat Password">
+
+                                <button class="register-btn" type="submit">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quick-view-section">
+                <div class="quick-view-block">
+                    <div class="image-block">
+                        <img class="img-responsive product-img" src="#" alt="photo">
+                    </div>
+
+                    <div class="description-block">
+                        <h3 class="section-title product-title "><a href="#">Long Wool Overcoat</a></h3>
+    
+                        <div class="description-price-block">
+                            <p class="tab-price current-price"><span class="currency-icon">$</span> <span class="price">130.00</span> </p>
+                            <ul class="rating">
+                                <li class="rating-item"><i class="icon-star"></i></li>
+                                <li class="rating-item"> <i class="icon-star"></i> </li>
+                                <li class="rating-item"><i class="icon-star"></i></li>
+                                <li class="rating-item"><i class="icon-star current-rating"></i></li>
+                                <li class="rating-item"><i class="icon-star"></i></li>
+                            </ul>
+                        </div>
+    
+                        <p class="description-product">
+                            Go sporty this summer with this vintage navi and white
+                            striped v-neck t-shirt from the Nike. Perfect for pairing
+                            whith denim and white kicks for a stylish sporty vibe.
+                        </p>
+    
+                        <div class="description-option">
+                            <div class="description-row">
+                                <span class="option-name">Color</span>
+                                <select class="option-select">
+                                    <option value="black">Black</option>
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                            </div>
+    
+                            <div class="description-row">
+                                <span class="option-name">Size</span>
+                                <select class="option-select">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                    <option value="XXXL">XXXL</option>
+                                </select>
+                            </div>
+    
+                            <div class="description-row">
+                                <span class="option-name">Quantity</span>
+                                <input class="option-quantity" type="number" min="1" max="5" value="1">
+                            </div>
+    
+                            <div class="description-row">
+                                <button class="quick-view-Btn">Add to cart</button>
+    
+                                <div class="options-item-btn">
+                                    <a href="#" class="options-item-link add-to-wishlist">
+                                        <img src="./src/img/Like.svg" alt="like">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="tags-block">
+                            <span class="tag-name">Tags:</span>
+                            <ul class="tags-list"></ul>
+                        </div>
+
+                        <button class="close-section-btn">
+                            <img class="img-responsive" src="./src/img/Close-icon.svg" alt="close">
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+            
+        <footer class="main-footer">
+
+            <section class="popup-thanks-subscribe">
+                <div class="thanks-subscribe">
+                    <p class="thanks-subscribe-text">thanks for subscribing</p>
+                    <button class="thanks-btn">you are welcome</button>
+                </div>
+            </section>
+            
+            <div class="wrapper">
+                <section class="footer-section">
+                    <div class="footer-block">
+                        <h4 class="footer-block-title">Follow us</h4>
+                        <ul class="footer-block-list">
+                            <li><a class="footer-list-link" href="#"><i class="icon-facebook"></i> Facebook</a></li>
+                            <li><a class="footer-list-link" href="#"><i class="icon-twitter"></i> Twitter</a></li>
+                            <li><a class="footer-list-link" href="#"><i class="icon-google"></i> Google Plus</a></li>
+                            <li><a class="footer-list-link" href="#"><i class="icon-instagram"></i> Instagram</a></li>
+                            <li><a class="footer-list-link" href="#"><i class="icon-pinterest"></i> Pinterest</a></li>
+                        </ul>
+                    </div>
+                        
+                    <div class="footer-block footer-account-block">
+                        <h4 class="footer-block-title">My account</h4>
+                        <ul class="footer-block-list">
+                            <li><a class="footer-list-link" href="#">My account</a></li>
+                            <li><a class="footer-list-link" href="#">Wishlist</a></li>
+                            <li><a class="footer-list-link" href="#">My cart</a></li>
+                            <li><a class="footer-list-link" href="#">Login</a></li>
+                            <li><a class="footer-list-link" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                        
+                    <div class="footer-block footer-info-block">
+                        <h4 class="footer-block-title">Information</h4>
+                        <ul class="footer-block-list">
+                            <li><a class="footer-list-link" href="#">New products</a></li>
+                            <li><a class="footer-list-link" href="#">Top salers</a></li>
+                            <li><a class="footer-list-link" href="#">FAQ</a></li>
+                            <li><a class="footer-list-link" href="#">Blog</a></li>
+                            <li><a class="footer-list-link" href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                        
+                    <div class="footer-block footer-contacts-block">
+                        <h4 class="footer-block-title">Contact us</h4>
+                        <ul class="footer-block-list">
+                            <li><a class="footer-list-link" href="#"><i class="icon-point"></i> Skariny 69-22, Minsk, Belarus</a></li>
+                            <li><a class="footer-list-link" href="tel:+375291465108"><i class="icon-footer-phone"></i>+375 (29) 146 - 51 - 08</a></li>
+                            <li><a class="footer-list-link" href="mailto:gnatsenko@gmail.com"><i class="icon-mail"></i>gnatsenko@gmail.com</a></li>
+                            <li class="footer-list-item">
+                                <ul class="footer-cart-list">
+                                    <li class="footer-cart-list-item"><img src="./src/img/cart1.png" alt="cart"></li>
+                                    <li class="footer-cart-list-item"><img src="./src/img/cart2.png" alt="cart"></li>
+                                    <li class="footer-cart-list-item"><img src="./src/img/cart3.png" alt="cart"></li>
+                                    <li class="footer-cart-list-item"><img src="./src/img/cart4.png" alt="cart"></li>
+                                    <li class="footer-cart-list-item"><img src="./src/img/cart5.png" alt="cart"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <section class="footer-bottom-secton">
+                <div class="wrapper">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="./src/img/footer-logo.svg" alt="logo">
+                        </a>
+                    </div>
+    
+                    <div class="copyright">
+                        <span>Copyright c 2020 Rights Reserved</span>
+                    </div>
+    
+                    <form id="footer-form">
+                        <input class="footer-form-input" type="email" placeholder="Your e-mail required">
+                        <button class="footer-form-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+
+            
+        </footer>
+
+<script src="./dist/bundle.js"></script>
+</body>
+</html>
