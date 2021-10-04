@@ -1,5 +1,56 @@
 // Small devices (landscape phones, 576px and up)
 
+@media (min-width: 280px) and (max-width: 320px) {
+	.caption-btn {
+		line-height: 25px;
+		margin-bottom: 15px;
+	}
+
+	.tabs-nav-btn {
+		width: 60px;
+		font-size: 7px;
+		font-weight: 600;
+	}
+
+	.wish-table .options-add-to-cart {
+		width: 56px;
+    	font-size: 6px;
+	}
+
+	.mobile-slider .tab-item-options {
+		margin-bottom: 24px;
+	}
+
+	.options-add-to-cart {
+		width: 90px;
+	}
+
+	.options-item-btn {
+		margin: 5px;
+	}
+
+	.footer-form-btn {
+		right: 10px;
+	}
+
+	.mobile-hidden {
+		display: none;
+	}
+
+	.top-left-menu {
+		width: 20%;
+	}
+
+	.logo-link img {
+		height: 18px;
+	}
+
+	.wishlist-section-title .section-title {
+		font-size: 16px;
+	}
+
+}
+
 @media (max-width: 767px) { 
 	.wrapper {
 		width: 100%;
@@ -445,7 +496,7 @@
 		padding: 15px 30px;
 		position: relative;
 		.image-block {
-			width: 75%;
+			width: 65%;
 			@include flex;
 		}
 		.section-title {
@@ -496,56 +547,69 @@
 
  }
 
- @media (min-width: 280px) and (max-width: 320px) {
-	.caption-btn {
-		line-height: 25px;
-		margin-bottom: 15px;
+@media (min-width: 540px) and (max-width: 768px) {
+	.quick-view-section {
+		z-index: 210;
 	}
 
-	.tabs-nav-btn {
-		width: 60px;
-		font-size: 7px;
-		font-weight: 600;
+	.quick-view-block {
+		@include flex;
+		align-items: center;
+		width: 85vw;
+		padding: 15px 30px;
+		position: relative;
+		.image-block {
+			width: 75%;
+			@include flex;
+		}
+		.section-title {
+			font-size: 12px;
+		}
+		.close-section-btn {
+			top: 2px;
+			right: 2px;
+			background-color: $popupBackground;
+			padding: 5px 7px;
+			width: auto;
+			height: auto;
+		}
 	}
 
-	.wish-table .options-add-to-cart {
-		width: 56px;
-    	font-size: 6px;
+	.description-product {
+		line-height: 20px;
 	}
 
-	.mobile-slider .tab-item-options {
-		margin-bottom: 24px;
+	.description-product,
+	.description-option {
+		padding-bottom: 15px;
 	}
 
-	.options-add-to-cart {
-		width: 90px;
+	.description-option {
+		margin-top: 15px;
 	}
 
-	.options-item-btn {
-		margin: 5px;
+	.description-block {
+		padding: 0;
+		position: static;
 	}
 
-	.footer-form-btn {
-		right: 10px;
+	.option-select {
+		width: 40%;
+		padding: 5px 15px;
 	}
 
-	.mobile-hidden {
+	.option-name,
+	.option-quantity,
+	.option-select {
+		margin-bottom: 10px;
+	}
+
+	.tags-block {
 		display: none;
 	}
 
-	.top-left-menu {
-		width: 20%;
-	}
-
-	.logo-link img {
-		height: 18px;
-	}
-
-	.wishlist-section-title .section-title {
-		font-size: 16px;
-	}
-
 }
+
 
 @media (min-width: 768px) and (max-width: 1024px) { 
 	.wrapper {
@@ -660,6 +724,66 @@
 	}
 
 	.mobile-filter-button {
+		display: none;
+	}
+
+	.quick-view-section {
+		z-index: 210;
+	}
+
+	.quick-view-block {
+		@include flex;
+		align-items: center;
+		width: 85vw;
+		padding: 15px 30px;
+		position: relative;
+		.image-block {
+			width: 75%;
+			@include flex;
+		}
+		.section-title {
+			font-size: 12px;
+		}
+		.close-section-btn {
+			top: 2px;
+			right: 2px;
+			background-color: $popupBackground;
+			padding: 5px 7px;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	.description-product {
+		line-height: 20px;
+	}
+
+	.description-product,
+	.description-option {
+		padding-bottom: 15px;
+	}
+
+	.description-option {
+		margin-top: 15px;
+	}
+
+	.description-block {
+		padding: 0;
+		position: static;
+	}
+
+	.option-select {
+		width: 40%;
+		padding: 5px 15px;
+	}
+
+	.option-name,
+	.option-quantity,
+	.option-select {
+		margin-bottom: 10px;
+	}
+
+	.tags-block {
 		display: none;
 	}
 

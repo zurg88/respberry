@@ -2,18 +2,20 @@
 import {getParams} from './cart';
 
 const quickView = () => {
-	const quickViewSection = document.querySelector('.quick-view-section'),
-		quickViewImageBlock = quickViewSection.querySelector('.image-block'),
-		quickViewProductTitle = quickViewSection.querySelector('.product-title > a'),
-		quickViewPrice = quickViewSection.querySelector('.price'),
-		quickViewImage = quickViewImageBlock.querySelector('img'),
-		quickViewLink = document.querySelectorAll('.quick-view-link');
+	const quickViewSection = document.querySelector('.quick-view-section');
 
-	const createQuickViewInfo = (elemImg, elemPrice, elemTitle) => {
-		quickViewImage.src = elemImg.src;
-		quickViewProductTitle.textContent = elemTitle.textContent;
-		quickViewPrice.textContent = elemPrice.textContent;
-	};
+	if (quickViewSection) {
+		const quickViewImageBlock = quickViewSection.querySelector('.image-block'),
+			quickViewProductTitle = quickViewSection.querySelector('.product-title > a'),
+			quickViewPrice = quickViewSection.querySelector('.price'),
+			quickViewImage = quickViewImageBlock.querySelector('img'),
+			quickViewLink = document.querySelectorAll('.quick-view-link');
+
+		const createQuickViewInfo = (elemImg, elemPrice, elemTitle) => {
+			quickViewImage.src = elemImg.src;
+			quickViewProductTitle.textContent = elemTitle.textContent;
+			quickViewPrice.textContent = elemPrice.textContent;
+		};
 
 		quickViewLink.forEach(item => {
 			item.addEventListener('click', () => {
@@ -24,8 +26,7 @@ const quickView = () => {
 					}
 					
 					if (window.matchMedia("(max-width: 1024px)").matches) {
-							createQuickViewInfo(...getParams(item, '.swiper-slide'));
-							
+							createQuickViewInfo(...getParams(item, '.swiper-slide'));	
 					}
 				}
 		
@@ -35,29 +36,29 @@ const quickView = () => {
 			});
 		});
 
-	const preventScroll = event => {
-		event.preventDefault();
-	};
-	
-	quickViewLink.forEach(item => {
-		item.addEventListener('click', event => {
+		const preventScroll = event => {
 			event.preventDefault();
-			quickViewSection.classList.add('show-quick-view');
-			document.addEventListener('wheel', preventScroll, {passive: false});
+		};
+	
+		quickViewLink.forEach(item => {
+			item.addEventListener('click', event => {
+				event.preventDefault();
+				quickViewSection.classList.add('show-quick-view');
+				document.addEventListener('wheel', preventScroll, {passive: false});
+			});
 		});
-	});
 
-	quickViewSection.addEventListener('click', event => {
-		const target = event.target;
+		quickViewSection.addEventListener('click', event => {
+			const target = event.target;
 
-		if (target.matches('.quick-view-section') || target.closest('.close-section-btn')) {
-			quickViewSection.classList.remove('show-quick-view');
-		document.removeEventListener('wheel', preventScroll);
-		}
+			if (target.matches('.quick-view-section') || target.closest('.close-section-btn')) {
+				quickViewSection.classList.remove('show-quick-view');
+			document.removeEventListener('wheel', preventScroll);
+			}
 
-	});
-
-
+		});
+	}
+		
 };
 
 export default quickView;

@@ -97,7 +97,11 @@ const wishlist = () => {
 		}
 		
 		if (window.matchMedia("(max-width: 1024px)").matches) {
-			cteateCartItem(...getParams(item, '.swiper-slide'), wishlistCartList);
+			try {
+				cteateCartItem(...getParams(item, '.swiper-slide'), wishlistCartList);
+			} catch (e) {
+				cteateCartItem(...getParams(item, '.quick-view-block'), wishlistCartList);
+			}
 		}
 
 		showWishListCartItems();

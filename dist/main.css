@@ -2453,6 +2453,34 @@ body {
 .ov-hidden {
   overflow: hidden; }
 
+@media (min-width: 280px) and (max-width: 320px) {
+  .caption-btn {
+    line-height: 25px;
+    margin-bottom: 15px; }
+  .tabs-nav-btn {
+    width: 60px;
+    font-size: 7px;
+    font-weight: 600; }
+  .wish-table .options-add-to-cart {
+    width: 56px;
+    font-size: 6px; }
+  .mobile-slider .tab-item-options {
+    margin-bottom: 24px; }
+  .options-add-to-cart {
+    width: 90px; }
+  .options-item-btn {
+    margin: 5px; }
+  .footer-form-btn {
+    right: 10px; }
+  .mobile-hidden {
+    display: none; }
+  .top-left-menu {
+    width: 20%; }
+  .logo-link img {
+    height: 18px; }
+  .wishlist-section-title .section-title {
+    font-size: 16px; } }
+
 @media (max-width: 767px) {
   .wrapper {
     width: 100%;
@@ -2728,7 +2756,7 @@ body {
     padding: 15px 30px;
     position: relative; }
     .quick-view-block .image-block {
-      width: 75%;
+      width: 65%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -2762,33 +2790,52 @@ body {
   .tags-block {
     display: none; } }
 
-@media (min-width: 280px) and (max-width: 320px) {
-  .caption-btn {
-    line-height: 25px;
-    margin-bottom: 15px; }
-  .tabs-nav-btn {
-    width: 60px;
-    font-size: 7px;
-    font-weight: 600; }
-  .wish-table .options-add-to-cart {
-    width: 56px;
-    font-size: 6px; }
-  .mobile-slider .tab-item-options {
-    margin-bottom: 24px; }
-  .options-add-to-cart {
-    width: 90px; }
-  .options-item-btn {
-    margin: 5px; }
-  .footer-form-btn {
-    right: 10px; }
-  .mobile-hidden {
-    display: none; }
-  .top-left-menu {
-    width: 20%; }
-  .logo-link img {
-    height: 18px; }
-  .wishlist-section-title .section-title {
-    font-size: 16px; } }
+@media (min-width: 540px) and (max-width: 768px) {
+  .quick-view-section {
+    z-index: 210; }
+  .quick-view-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    width: 85vw;
+    padding: 15px 30px;
+    position: relative; }
+    .quick-view-block .image-block {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row; }
+    .quick-view-block .section-title {
+      font-size: 12px; }
+    .quick-view-block .close-section-btn {
+      top: 2px;
+      right: 2px;
+      background-color: rgba(51, 51, 51, 0.5);
+      padding: 5px 7px;
+      width: auto;
+      height: auto; }
+  .description-product {
+    line-height: 20px; }
+  .description-product,
+  .description-option {
+    padding-bottom: 15px; }
+  .description-option {
+    margin-top: 15px; }
+  .description-block {
+    padding: 0;
+    position: static; }
+  .option-select {
+    width: 40%;
+    padding: 5px 15px; }
+  .option-name,
+  .option-quantity,
+  .option-select {
+    margin-bottom: 10px; }
+  .tags-block {
+    display: none; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .wrapper {
@@ -2855,6 +2902,51 @@ body {
   .grid-view-block {
     display: none; }
   .mobile-filter-button {
+    display: none; }
+  .quick-view-section {
+    z-index: 210; }
+  .quick-view-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    width: 85vw;
+    padding: 15px 30px;
+    position: relative; }
+    .quick-view-block .image-block {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row; }
+    .quick-view-block .section-title {
+      font-size: 12px; }
+    .quick-view-block .close-section-btn {
+      top: 2px;
+      right: 2px;
+      background-color: rgba(51, 51, 51, 0.5);
+      padding: 5px 7px;
+      width: auto;
+      height: auto; }
+  .description-product {
+    line-height: 20px; }
+  .description-product,
+  .description-option {
+    padding-bottom: 15px; }
+  .description-option {
+    margin-top: 15px; }
+  .description-block {
+    padding: 0;
+    position: static; }
+  .option-select {
+    width: 40%;
+    padding: 5px 15px; }
+  .option-name,
+  .option-quantity,
+  .option-select {
+    margin-bottom: 10px; }
+  .tags-block {
     display: none; } }
 
 @media (min-width: 1025px) {
