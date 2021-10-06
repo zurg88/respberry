@@ -2882,7 +2882,34 @@ body {
   .option-select {
     margin-bottom: 10px; }
   .tags-block {
-    display: none; } }
+    display: none; }
+  .blog-left-sidebar {
+    padding-right: 0;
+    max-width: 100%; }
+  .content-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center; }
+  .aside-search-blog-page {
+    display: none; }
+  .about-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .product-categories-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .product-categories-item {
+    padding: 3px 7px; }
+  .sidebar-title {
+    text-align: center; }
+  .product-tags-list {
+    justify-content: center; } }
 
 @media (min-width: 540px) and (max-width: 768px) {
   .quick-view-section {
