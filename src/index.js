@@ -18,6 +18,7 @@ import account from './modules/account';
 import subscribe from './modules/subscribe';
 import filters from './modules/shop-filters';
 import quickView from './modules/quick-view';
+import createCommentForm from './modules/comment-form';
 
 import noUiSlider from 'nouislider';
 
@@ -94,3 +95,7 @@ filters();
 
 // quick View
 quickView();
+
+// Comment form
+
+createCommentForm();

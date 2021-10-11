@@ -586,6 +586,24 @@
 		justify-content: center;
 	}
 
+	.blog-post-important-text {
+		font-size: 15px;
+		padding: 30px 20px;
+	}
+
+	.contacts-form {
+		margin-right: 0;
+	}
+
+	.contacts-section {
+		@include flex-column;
+	}
+
+	.map-section {
+		margin-top: 0;
+	}
+
+
  }
 
 @media (min-width: 540px) and (max-width: 768px) {
@@ -826,6 +844,20 @@
 
 	.tags-block {
 		display: none;
+	}
+
+	.contacts-section {
+		justify-content: center;
+	}
+
+	.contacts-section {
+		@include flex-column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.map-section {
+		margin-top: 0;
 	}
 
  }

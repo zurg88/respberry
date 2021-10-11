@@ -1,0 +1,127 @@
+.post-content,
+.comments-list {
+	border-bottom: 2px solid $gray-border;
+}
+
+.blog-post-important-text {
+	background-color: $gray-light;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	line-height: 28px;
+	padding: 30px 110px;
+	margin: 30px 0;
+	&::after {
+		content: url("../img/Quotes-L.png");
+		position: absolute;
+		left: 20px;
+		top: 20px;
+	}
+	&::before {
+		content: url("../img/Quotes-R.png");
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+.post-img-block {
+	margin: 30px 0;
+}
+
+.blog-post-text {
+	color: $gray-text;
+}
+
+.social-icon-list {
+	@include flex;
+	justify-content: end;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.social-icon-list-item {
+	margin-left: 10px;
+}
+
+.comments-section .section-title {
+	text-align: left;
+}
+
+.comment-user-name-date-block,
+.comment-wrapper {
+	@include flex;
+	justify-content: start;
+	align-items: start;
+}
+
+.comment-wrapper {
+	margin-bottom: 30px;
+}
+
+.comment-form,
+.comment {
+	@include flex-column;
+	align-items: start;
+}
+
+.user-photo  {
+	background-color: $gray-light;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+.comment-user-name {
+	margin: 0 30px 0 0;
+}
+
+.comment-date,
+.comment-text {
+	color: $gray-text;
+	font-size: 13px;
+}
+
+.comment-for-user,
+.reply-btn {
+	font-weight: 800;
+}
+
+.comment-for-user {
+	color: $dark-color;
+}
+
+.reply-btn {
+	font-size: 12px;
+	letter-spacing: 1px;
+	position: relative;
+	padding-right: 20px;
+	&::after {
+		content: url(../img/Arrow-comment-reply.png);
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.comments-sub-list {
+	max-width: 100%;
+	margin-left: 80px;
+}
+
+.comment-form-item,
+.comment-form-text {
+	width: 100%;
+	border: 1px solid $gray-border;
+}
+
+.comment-form-item {
+	line-height: 50px;
+}
+
+.comment-form-description {
+	margin: 25px 0 15px 0;
+}
+
+.submit-commrnt-form {
+	margin-top: 25px;
+}
