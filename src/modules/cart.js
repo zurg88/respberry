@@ -109,6 +109,10 @@ const cart = () => {
 		const cartItemCloseCcon = cartBlock.querySelectorAll('.cart-item-close-icon');
 		
 		cartItemCloseCcon.forEach(item => {
+			if(!sessionStorage.cartData) {
+				const cartListItems = cartBlock.querySelectorAll('.cart-list-item');
+				addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
+			}
 			item.addEventListener('click', () => {
 				const cartListItems = cartBlock.querySelectorAll('.cart-list-item');
 				const itemParentElement = item.closest('.cart-list-item');

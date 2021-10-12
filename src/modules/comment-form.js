@@ -3,15 +3,21 @@
 const createCommentForm = () => {
 
 	if(document.body.classList.contains('post-page')) {
-			const commentForm = document.querySelector('.comment-form'),
-			commentFormUserName = document.querySelector('.comment-form-user-name'),
-			commentFormUserEmaile = document.querySelector('.comment-form-user-email'),
+		const	commentFormUserName = document.querySelector('.comment-form-user-name'),
 			commentFormText = document.querySelector('.comment-form-text'),
 			submitCommentForm = document.querySelector('.submit-commrnt-form'),
+			commentsQuantity = document.querySelector('.comments-quantity'),
 			replyBtnCollection = document.querySelectorAll('.reply-btn'),
 			commentsList = document.querySelector('.comments-list');
 		let reply = false;
 		let	parentCommentItem;
+
+		const getQuantityComments = () => {
+			const commentsItems = commentsList.querySelectorAll('.comment-list-item');
+			commentsQuantity.textContent = commentsItems.length;
+		};
+
+		getQuantityComments();
 
 		const replyBtnEventsForCreateSubComment = item => {
 			item.addEventListener('click', (event) => {
@@ -70,12 +76,16 @@ const createCommentForm = () => {
 			commentDate.textContent = date.toLocaleString("ru", options);
 			replyBtnEventsForCreateSubComment(replyBtn);
 
+			getQuantityComments();
+
 			return commentItem;
 		};
 
 		const createSubCommentList = ()=> {
 			const subList = document.createElement('ul');
 			subList.classList.add('comments-sub-list');
+
+			getQuantityComments();
 			return subList;
 		};
 
@@ -97,6 +107,7 @@ const createCommentForm = () => {
 					commentsList.append(createCommentItem(commentFormText.value, commentFormUserName.value));
 				}
 				commentFormText.value = '';
+				getQuantityComments();
 			}
 		});
 	}

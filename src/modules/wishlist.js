@@ -69,6 +69,11 @@ const wishlist = () => {
 		const cartItemCloseIcon = wishlistBlock.querySelectorAll('.cart-item-close-icon');
 			cartItemCloseIcon.forEach(item => {
 				item.addEventListener('click', () => {
+					if(!sessionStorage.wishlistData) {
+						const wishlistBlock = document.querySelector('.wishlist-block'),
+							wishlistCartItems = wishlistBlock.querySelectorAll('.cart-list-item');
+							addDataToStorege(wishlistCartItems, '.cart-description-title', '.cart-item-img > img', 'wishlistData');
+					}
 					const cartListItems = wishlistBlock.querySelectorAll('.cart-list-item');
 					const itemParentElement = item.closest('.cart-list-item');
 					const itemsArr = [...cartListItems];
