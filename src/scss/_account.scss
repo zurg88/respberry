@@ -86,7 +86,7 @@
 	background-color: $dark-color;
 	margin: 0 30px 30px 30px;
 	line-height: 2.8;
-	font-weight: 800;
+	font-weight: $fontWeight800;
 }
 
 .login-register-form {
@@ -105,7 +105,7 @@
 	margin: -20px 30px 30px 30px ;
 	margin-top: -25px;
 	margin-right: 30px;
-	font-size: 13px;
+	font-size: $fontSize13p;
 }
 
 .login-register-form .remember-check {

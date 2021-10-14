@@ -116,7 +116,7 @@
 }
 
 .featuries-description-text {
-	font-size: 13px;
+	font-size: $fontSize13px;
 	color: $gray-text;
 }
 
@@ -209,9 +209,9 @@
 	background-color: $gray-light;
 	color: $gray-text;
 	@include text-uppercase;
-	font-size: 12px;
-	font-weight: 600;
-	line-height: 30px;
+	font-size: $fontSize12px;
+	font-weight: $fontWeight600;
+	line-height: $lineHeight30px;
 	width: 100px;
 	transition: all .1s;
 	&:hover {
@@ -308,7 +308,7 @@
 	@include text-uppercase;
 	margin-top: 10px;
 	font-size: 11px;
-	font-weight: 600;
+	font-weight: $fontWeight600;
 	transition: all .5s;
 	z-index: 10;
 	&:hover {
@@ -335,7 +335,7 @@
 .tab-item-title {
 	font-size: 14px;
 	letter-spacing: 1px;
-	line-height: 40px;
+	line-height: $lineHeight40px;
 	color: $dark-color;
 	font-weight: 500;
 	@include text-uppercase;
@@ -349,7 +349,7 @@
 
 .tab-price {
 	font-size: 18px;
-	line-height: 40px;
+	line-height: $lineHeight40px;
 	color: #3a3a3a;
 	font-weight: 500;
 	margin-top: 0;
@@ -357,12 +357,12 @@
 }
 
 .star-reiting {
-	line-height: 40px;
-	font-size: 12px;
+	line-height: $lineHeight40px;
+	font-size: $fontSize12px;
 }
 
 .current-price {
-	font-weight: 600;
+	font-weight: $fontWeight600;
 }
 
 .last-price {
@@ -374,7 +374,7 @@
 
 .rating {
 	display: flex;
-	line-height: 40px;
+	line-height: $lineHeight40px;
   }
 
 .rating-item {
@@ -473,7 +473,7 @@
 
 .post-date {
 	font-size: 36px;
-	font-weight: 600;
+	font-weight: $fontWeight600;
 	line-height: 36px;
 }
 
@@ -484,7 +484,7 @@
 .post-date-month,
 .post-date-year {
 	font-weight: 400;
-	font-size: 13px;
+	font-size: $fontSize13px;
 }
 
 .blog-post-title {

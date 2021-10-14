@@ -5,8 +5,8 @@
 
 .blog-post-important-text {
 	background-color: $gray-light;
-	font-weight: 600;
-	font-size: 16px;
+	font-weight: $fontWeight600;
+	font-size: $fontSize16px;
 	text-align: center;
 	position: relative;
 	line-height: 28px;
@@ -79,7 +79,7 @@
 .comment-date,
 .comment-text {
 	color: $gray-text;
-	font-size: 13px;
+	font-size: $fontSize13px;
 }
 
 .comment-for-user,
@@ -92,7 +92,7 @@
 }
 
 .reply-btn {
-	font-size: 12px;
+	font-size: $fontSize12px;
 	letter-spacing: 1px;
 	position: relative;
 	padding-right: 20px;

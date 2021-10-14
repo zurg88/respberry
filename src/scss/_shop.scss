@@ -118,7 +118,7 @@
 }
 
 .showing-results-text {
-	font-size: 13px;
+	font-size: $fontSize13px;
 	color: $gray-text;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .product-description-text {
-	font-size: 13px;
+	font-size: $fontSize13px;
 	line-height: 22px;
 	color: $gray-text;
 }
@@ -222,12 +222,12 @@
 
 .product-tags-item {
 	padding: 0 10px;
-	line-height: 30px;
+	line-height: $lineHeight30px;
 	border-radius: 15px;
 	background-color: $gray-light;
 	cursor: pointer;
 	text-align: center;
-	font-size: 12px;
+	font-size: $fontSize12px;
 	margin:0 10px 10px 0;
 	transition: all .3s;
 	&:hover {

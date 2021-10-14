@@ -91,7 +91,7 @@
 	line-height: 23px;
 	padding-right: 25px;
 	margin: 0;
-	font-size: 12px;
+	font-size: $fontSize12px;
 }
 
 .tag-name,
@@ -108,14 +108,14 @@
 .option-name,
 .option-quantity,
 .option-select {
-	line-height: 30px;
+	line-height: $lineHeight30px;
 	margin-bottom: 25px;
 }
 
 .option-select {
 	width: 200px;
 	padding: 6px 15px;
-	line-height: 30px;
+	line-height: $lineHeight30px;
 }
 
 .tags-block {
