@@ -5,7 +5,7 @@
 .swiper-container {
 	width: 100%;
 	height: 100%;
-  }
+}
 
 .swiper-slide {
 	text-align: center;
@@ -47,11 +47,12 @@
 	width: 175px;
 	line-height: 45px;
 	border-radius: 23px;
-	box-shadow: (0px 5px 6.5px rgba(255,0,84,0.4));
+	box-shadow: (0px 5px 6.5px rgba(255, 0, 84, 0.4));
 	@include text-uppercase;
 	transition: all .5s;
+
 	&:hover {
-		box-shadow: (0px 5px 6.5px rgba(255,0,84,0.4));
+		box-shadow: (0px 5px 6.5px rgba(255, 0, 84, 0.4));
 		background-color: #ff256d;
 	}
 }
@@ -65,14 +66,16 @@
 	background-color: $dark-color;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-button-next:after {
 	padding: 10px 17px;
 	border: 2px solid #7e9396;
 	border-radius: 50%;
 	font-size: 30px;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
 	color: #7e9396;
 	margin: 15px;
 	right: 15px;
@@ -100,7 +103,7 @@
 	.featuries-description {
 		border-right: 1px solid $gray-border;
 		padding-right: 30px;
-	 }
+	}
 }
 
 .call-center .featuries-description {
@@ -129,6 +132,7 @@
 	display: block;
 	position: relative;
 	height: 100%;
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -142,7 +146,7 @@
 	}
 }
 
-.categories-list-item:hover>.categories-link::after{
+.categories-list-item:hover>.categories-link::after {
 	height: 83%;
 	width: 89%;
 	left: 20px;
@@ -214,6 +218,7 @@
 	line-height: $lineHeight30px;
 	width: 100px;
 	transition: all .1s;
+
 	&:hover {
 		outline: 2px solid $dark-color;
 	}
@@ -264,6 +269,7 @@
 	align-items: center;
 	flex-direction: column;
 	transition: all .3s ease-out;
+
 	&::before {
 		content: '';
 		background-color: #313131;
@@ -272,6 +278,7 @@
 		position: absolute;
 		opacity: .9;
 	}
+
 	opacity: 0;
 }
 
@@ -288,6 +295,7 @@
 	transition: all .5s;
 	padding: 6px;
 	text-align: center;
+
 	&:hover {
 		background-color: $accent-color;
 	}
@@ -311,6 +319,7 @@
 	font-weight: $fontWeight600;
 	transition: all .5s;
 	z-index: 10;
+
 	&:hover {
 		background-color: #fff;
 		color: $dark-color;
@@ -325,6 +334,7 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
+
 	&:hover .tab-item-options {
 		opacity: 1;
 		top: 0;
@@ -375,7 +385,7 @@
 .rating {
 	display: flex;
 	line-height: $lineHeight40px;
-  }
+}
 
 .rating-item {
 	width: 20px;
@@ -384,17 +394,19 @@
 	color: $gray-text;
 	cursor: pointer;
 	z-index: 10;
+
 	i {
 		display: block;
 		width: 100%;
 		height: 100%;
 	}
-  }
+}
 
 .mobile-slider {
 	overflow: hidden;
 	width: 100%;
 	margin-top: 30px;
+
 	.swiper-wrapper {
 		@include flex;
 	}
@@ -414,13 +426,14 @@
 		flex-direction: row;
 		justify-content: space-between;
 		background-color: transparent;
+
 		&::before {
 			display: none;
 		}
 	}
 }
 
-  
+
 .active {
 	color: #ffba00;
 }
@@ -438,6 +451,7 @@
 
 .blog-list {
 	@include flex;
+
 	& :last-child {
 		margin-right: 0;
 	}
@@ -467,7 +481,7 @@
 	transition: all .5s;
 }
 
-.blog-list-item:hover .post-date-block{
+.blog-list-item:hover .post-date-block {
 	background-color: $accent-color;
 }
 
@@ -481,6 +495,7 @@
 	width: 40px;
 	border-bottom: 3px solid #fff;
 }
+
 .post-date-month,
 .post-date-year {
 	font-weight: 400;
@@ -514,8 +529,8 @@
 
 .brands-list-item {
 	transition: all .5s;
+
 	&:hover {
 		transform: scale(1.2);
 	}
 }
-

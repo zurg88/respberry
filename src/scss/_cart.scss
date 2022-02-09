@@ -1,0 +1,11 @@
+.cart-table-wrapper {
+	@include flex;
+}
+
+.cart-table {
+	flex: 4;
+}
+
+.cart-totals-block {
+	flex: 2;
+}

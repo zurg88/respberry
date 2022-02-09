@@ -231,7 +231,7 @@ const wishlist = () => {
 					item.addEventListener('click', () => {
 					if ( document.body.classList.contains('wishlist-body') ) {
 						cteateCartItem(...getParams(item, '.table-row'), cartList);
-						const cartListItems = document.querySelectorAll('.cart-list-item');
+						const cartListItems = cartBlock.querySelectorAll('.cart-list-item');
 						userMenuAnimation(cartBlock, cartListItems, 25);
 						addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
 						wishlistItemsValue();
@@ -252,7 +252,7 @@ const wishlist = () => {
 	wishlistCloseTableRow();
 
 	const renderWishlstDropList = () => {
-		if (sessionStorage.wishlistData && !document.body.classList.contains('wishlist-body')) {
+		if (sessionStorage.wishlistData) {
 			const wishlistListItems = wishlistCartList.querySelectorAll('.cart-list-item');
 			wishlistListItems.forEach(item => {
 				item.remove();

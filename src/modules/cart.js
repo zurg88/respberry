@@ -174,7 +174,7 @@ const cart = () => {
 	}
 
 	const addToCart = (elem) => {
-		
+
 		if ( !document.body.classList.contains('wishlist-body') && !document.body.classList.contains('shop-page') ) {
 			if (window.matchMedia("(min-width: 1025px)").matches) {
 				cteateCartItem(...getParams(elem, '.tab-list-item'), cartList);
@@ -188,14 +188,14 @@ const cart = () => {
 		if (document.body.classList.contains('shop-page')) {
 			cteateCartItem(...getParams(elem, '.product-list-item'), cartList);
 		}
-		
+
+		const cartListItems = cartBlock.querySelectorAll('.cart-list-item');
+		addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
+		console.log(cartListItems);
 		getcartItemsValue();
 		removeCartItem();
 		cartTotalPrice();
 		showCartListItems();
-
-		const cartListItems = cartBlock.querySelectorAll('.cart-list-item');
-		addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
 	};
 
 	const addToCartFromQuickViewSection = (elem) => {
@@ -226,7 +226,6 @@ const cart = () => {
 
 	addToCartBtn.forEach(item => {
 		item.addEventListener('click', () => {
-
 			checkIsEmptyCart();
 			checkCartDeliveryPrice();
 			

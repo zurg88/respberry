@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="dist/main.css">
 </head>
-<body class="contacts-page">
+<body class="cart-page">
 
     <header class="main-header">
             <div class="wrapper">
@@ -341,7 +341,7 @@
                                     </div>
                                 </div>
 
-                                <a class="view-cart-button" href="./cart.html">View my shopping cart</a>
+                                <button class="view-cart-button">View my shopping cart</button>
 
                                 <div class="mobile-close">
                                     <img src="./src/img/Close-icon.png" alt="close">
@@ -353,178 +353,80 @@
                 </section>
 
     </header>
-    <main class="main-content">
-            <div class="wrapper">
 
-				<section class="contacts-section">
-					<div class="contacts-form">
-						<h3 class="section-title">Get in touch</h3>
-						<form class="contacts-form" action="#">
-							<span class="contacts-form-info">First Name</span>
-							<input class="contacts-form-item" type="text" required>
+	<main class="cart-main">
+		<div class="cart-section-title">
+			<div class="wrapper">
+				<h2 class="section-title">Cart</h2>
+			</div>
+		</div>
+		<div class="wrapper cart-table-wrapper">
+			<table class="cart-table">
+				<tr class="table-head">
+					<th></th>
+					<th>Product name</th>
+					<th>Unit price</th>
+					<th>Quantity</th>
+					<th>Total</th>
+				</tr>
 
-							<span class="contacts-form-info">Email Address</span>
-							<input class="contacts-form-item" type="text" required>
+				<tr class="table-row">
+					<td class="close-cell"> <button class="close-btn"> <img src="./src/img/Close-dark-icon.png" alt="close"> </button> </td>
+					<td> 
+						<div class="product-description"> 
+							<img class="product-img img-responsive" src="./src/img/Photo-wish-1.png" alt="photo">
+							<h5 class="product-title"> <a href="#">Long Wool overcoat</a> </h5> 
+						</div>
+						 
+					</td>
+					<td> 
+						<span class="currency-icon">$</span> 
+						<span class="wish-price price"> 130 </span> 
+					</td>
+					<td> Quantity </td>
+					<td> Total </td>
+				</tr>
 
-							<span class="contacts-form-info">Subject</span>
-							<input class="contacts-form-item" type="text">
+			</table>
 
-							<span class="contacts-form-info">Message</span>
-							<textarea class="contacts-form-message" cols="30" rows="10" required></textarea>
+			<div class="cart-totals-block">
+				Cart Totals
+			</div>
+		</div>
 
-							<button class="submit-contacts-form" type="submit">Send</button>
+		<section class="popup-section">
+			<div class="login-register-block">
+				<div class="login-register-nav">
+					<button class="login-register-btn active">Login</button>
+					<button class="login-register-btn">Register</button>
+				</div>
+
+				<div class="login-register-content">
+					<div class="login-content">
+						<form class="login-register-form login-form" id="login-form" action="">
+							<input id="login-name" type="text" placeholder="User Name">
+							<input id="login-password" type="password" placeholder="Password">
+							<a class="lost-password-link" href="#"> Lost Your Password? </a>
+							<label> <input class="remember-check" type="checkbox"> Remember Me </label>
+							<button class="register-btn" id="login-btn" type="submit">Login</button>
 						</form>
 					</div>
-					<div class="contacts-info">
-						<h3 class="section-title">Need support?</h3>
-						<ul class="contacts-info-list">
-                            <li class="contacts-info-list-item"><a class="contacts-info-list-link" href="#"><i class="icon-point"></i> Skariny 69-22, Minsk, Belarus</a></li>
-                            <li class="contacts-info-list-item"><a class="contacts-info-list-link" href="tel:+375291465108"><i class="icon-footer-phone"></i>+375 (29) 146 - 51 - 08</a></li>
-                            <li class="contacts-info-list-item"><a class="contacts-info-list-link" href="mailto:gnatsenko@gmail.com"><i class="icon-mail"></i>gnatsenko@gmail.com</a></li>
-                        </ul>
+
+					<div class="register-content">
+						<form class="login-register-form register-form" id="register-form" action="">
+							<input id="user-name" type="text" placeholder="User Name">
+							<input id="user-email" type="email" placeholder="Email">
+							<input id="user-password" type="password" placeholder="Password">
+							<input id="user-repeat-password" type="password" placeholder="Repeat Password">
+
+							<button class="register-btn" type="submit">Register</button>
+						</form>
 					</div>
-				</section>
+				</div>
+			</div>
+		</section>
+	</main>
 
-				<section class="map-section">
-					<img class="img-responsive" src="./src/img/Map.png" alt="map">
-				</section>
-
-                <section class="brands-section">
-                    <ul class="brands-list">
-                        <li class="brands-list-item">
-                            <img src="./src/img/Brand1.svg" alt="brand">
-                        </li>
-                        <li class="brands-list-item">
-                            <img src="./src/img/Brand2.svg" alt="brand">
-                        </li>
-                        <li class="brands-list-item">
-                            <img src="./src/img/Brand3.svg" alt="brand">
-                        </li>
-                        <li class="brands-list-item">
-                            <img src="./src/img/Brand4.svg" alt="brand">
-                        </li>
-                        <li class="brands-list-item">
-                            <img src="./src/img/Brand5.svg" alt="brand">
-                        </li>
-                        <li class="brands-list-item">
-                            <img src="./src/img/Brand6.svg" alt="brand">
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <section class="mobile-popup-cart-list"></section>
-
-            <section class="popup-section">
-                <div class="login-register-block">
-                    <div class="login-register-nav">
-                        <button class="login-register-btn active">Login</button>
-                        <button class="login-register-btn">Register</button>
-                    </div>
-
-                    <div class="login-register-content">
-                        <div class="login-content">
-                            <form class="login-register-form login-form" id="login-form" action="">
-                                <input id="login-name" type="text" placeholder="User Name">
-                                <input id="login-password" type="password" placeholder="Password">
-                                <a class="lost-password-link" href="#"> Lost Your Password? </a>
-                                <label> <input class="remember-check" type="checkbox"> Remember Me </label>
-                                <button class="register-btn" id="login-btn" type="submit">Login</button>
-                            </form>
-                        </div>
-
-                        <div class="register-content">
-                            <form class="login-register-form register-form" id="register-form" action="">
-                                <input id="user-name" type="text" placeholder="User Name">
-                                <input id="user-email" type="email" placeholder="Email">
-                                <input id="user-password" type="password" placeholder="Password">
-                                <input id="user-repeat-password" type="password" placeholder="Repeat Password">
-
-                                <button class="register-btn" type="submit">Register</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="quick-view-section">
-                <div class="quick-view-block">
-                    <div class="image-block">
-                        <img class="img-responsive product-img" src="#" alt="photo">
-                    </div>
-
-                    <div class="description-block">
-                        <h3 class="section-title product-title "><a href="#">Long Wool Overcoat</a></h3>
-    
-                        <div class="description-price-block">
-                            <p class="tab-price current-price"><span class="currency-icon">$</span> <span class="price">130.00</span> </p>
-                            <ul class="rating">
-                                <li class="rating-item"><i class="icon-star"></i></li>
-                                <li class="rating-item"> <i class="icon-star"></i> </li>
-                                <li class="rating-item"><i class="icon-star"></i></li>
-                                <li class="rating-item"><i class="icon-star current-rating"></i></li>
-                                <li class="rating-item"><i class="icon-star"></i></li>
-                            </ul>
-                        </div>
-    
-                        <p class="description-product">
-                            Go sporty this summer with this vintage navi and white
-                            striped v-neck t-shirt from the Nike. Perfect for pairing
-                            whith denim and white kicks for a stylish sporty vibe.
-                        </p>
-    
-                        <div class="description-option">
-                            <div class="description-row">
-                                <span class="option-name">Color</span>
-                                <select class="option-select">
-                                    <option value="black">Black</option>
-                                    <option value="red">Red</option>
-                                    <option value="blue">Blue</option>
-                                </select>
-                            </div>
-    
-                            <div class="description-row">
-                                <span class="option-name">Size</span>
-                                <select class="option-select">
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                    <option value="XXL">XXL</option>
-                                    <option value="XXXL">XXXL</option>
-                                </select>
-                            </div>
-    
-                            <div class="description-row">
-                                <span class="option-name">Quantity</span>
-                                <input class="option-quantity" type="number" min="1" max="5" value="1">
-                            </div>
-    
-                            <div class="description-row">
-                                <button class="quick-view-Btn">Add to cart</button>
-    
-                                <div class="options-item-btn">
-                                    <a href="#" class="options-item-link add-to-wishlist">
-                                        <img src="./src/img/Like.svg" alt="like">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="tags-block">
-                            <span class="tag-name">Tags:</span>
-                            <ul class="tags-list"></ul>
-                        </div>
-
-                        <button class="close-section-btn">
-                            <img class="img-responsive" src="./src/img/Close-icon.svg" alt="close">
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-    </main>
-        
     <footer class="main-footer">
 
             <section class="popup-thanks-subscribe">
