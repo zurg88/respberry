@@ -19,6 +19,7 @@ import subscribe from './modules/subscribe';
 import filters from './modules/shop-filters';
 import quickView from './modules/quick-view';
 import createCommentForm from './modules/comment-form';
+import vartPage from './modules/cart-page';
 
 import noUiSlider from 'nouislider';
 
@@ -97,5 +98,7 @@ filters();
 quickView();
 
 // Comment form
-
 createCommentForm();
+
+// Cart Page
+vartPage();

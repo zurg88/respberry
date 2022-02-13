@@ -2,6 +2,7 @@
 	background-color: $dark-color;
 	color: #fff;
 	position: relative;
+	margin-top: 30px;
 }
 
 .footer-section {
@@ -21,6 +22,7 @@
 	font-size: $fontSize13px;
 	letter-spacing: 1px;
 	line-height: $lineHeight30px;
+
 	i {
 		margin-right: 20px;
 	}
@@ -42,6 +44,7 @@
 .footer-bottom-secton {
 	border-top: 1px solid $gray-dark;
 	padding: 60px 0;
+
 	.wrapper {
 		@include flex;
 		align-items: center;
@@ -80,7 +83,7 @@
 	width: 90px;
 	border-radius: 20px;
 	font-weight: 700;
-	position: absolute;	
+	position: absolute;
 	right: 90px;
 }
 
@@ -110,9 +113,9 @@
 
 .thanks-btn {
 	text-align: center;
-    color: #fff;
-    background-color: #3a3a3a;
-    line-height: 2.8;
-    font-weight: $fontWeight800;
+	color: #fff;
+	background-color: #3a3a3a;
+	line-height: 2.8;
+	font-weight: $fontWeight800;
 	width: 90%;
 }

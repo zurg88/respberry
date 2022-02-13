@@ -29,11 +29,13 @@
 .left-menu-select {
 	position: absolute;
 	top: -9px;
+
 	.active {
 		display: block;
 		background-color: transparent;
 		color: $dark-color;
 	}
+
 	.active,
 	&:last-child {
 		border-bottom: none;
@@ -44,7 +46,7 @@
 	margin-left: 75px;
 }
 
-.wishlist-block > .cart-list-block {
+.wishlist-block>.cart-list-block {
 	left: 0;
 	top: 24px;
 }
@@ -58,6 +60,7 @@
 	font-weight: $fontWeight800;
 	line-height: 25px;
 	margin-right: 40px;
+
 	img {
 		height: 25px;
 	}
@@ -80,6 +83,7 @@
 	display: none;
 	opacity: 0;
 	z-index: 10;
+
 	&:last-child {
 		border-bottom: none;
 	}
@@ -98,6 +102,7 @@
 	height: 100%;
 	transition: all .5s;
 	border-bottom: 1px solid $gray-dark;
+
 	&:hover {
 		color: #fff;
 		background-color: $gray-dark;
@@ -186,7 +191,7 @@
 	text-align: left;
 }
 
-.dresses:hover>.drop-down-menu{
+.dresses:hover>.drop-down-menu {
 	display: block;
 	opacity: 1;
 }
@@ -218,6 +223,7 @@
 	border-bottom: 1px solid $gray-text;
 	padding-right: 165px;
 	padding-top: 2px;
+
 	h3 {
 		margin-top: 0;
 	}
@@ -230,6 +236,7 @@
 	display: block;
 	padding: 10px 0;
 	transition: all .5s;
+
 	&:hover {
 		color: $accent-color;
 	}
@@ -252,9 +259,11 @@
 	z-index: 1;
 	padding-top: 45px;
 	font-weight: $fontWeight800;
+
 	p {
 		margin: 0;
 	}
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -280,6 +289,7 @@
 	line-height: 70px;
 	transition: all .5s;
 	z-index: 1;
+
 	&:hover {
 		background-color: $gray-light;
 	}
@@ -325,7 +335,7 @@
 	margin-bottom: 6px;
 }
 
-.cart-block {	
+.cart-block {
 	line-height: 70px;
 	min-width: 65px;
 	position: relative;
@@ -334,6 +344,7 @@
 
 .cart-icon-block {
 	padding: 0 10px;
+
 	&:hover {
 		background-color: $gray-light;
 	}
@@ -367,6 +378,7 @@
 	border-bottom: 1px solid $gray-dark;
 	transition: all .5s;
 	opacity: 0;
+
 	&:hover {
 		background-color: $gray-dark;
 	}
@@ -379,6 +391,7 @@
 	max-width: 66px;
 	max-height: 80px;
 	@include flex;
+
 	img {
 		width: 100%;
 		height: auto;
@@ -453,6 +466,7 @@
 	font-size: 14px;
 	font-weight: $fontWeight800;
 	line-height: 50px;
+	text-align: center;
 }
 
 .cart-empty-el {
