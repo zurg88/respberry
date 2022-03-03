@@ -42,7 +42,9 @@ const wishlist = () => {
 		whishlistmessageSection.classList.remove('show-wishlist-message');
 	};
 
-	whishlistmessageSection.addEventListener('click', event => {
+	if (whishlistmessageSection) {
+
+		whishlistmessageSection.addEventListener('click', event => {
 			const target = event.target;
 
 			if(whishlistmessageSection.classList.contains('show-wishlist-message')) {
@@ -53,9 +55,12 @@ const wishlist = () => {
 			};
 		});
 
-	whishlistSectionCloseMessegeBtn.addEventListener('click', () => {
-		removeWishlistMassage();
-	});
+		whishlistSectionCloseMessegeBtn.addEventListener('click', () => {
+			removeWishlistMassage();
+		});
+	};
+
+	
 
 	const createMessageForWishTable = () => {
 		if( JSON.parse(sessionStorage.wishlistData).length === 0 && document.body.classList.contains('wishlist-body')) {

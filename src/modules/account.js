@@ -1,7 +1,7 @@
 'use strict';
 
 const account = () => {
-	const popupLoginRegisterSection = document.querySelector('.popup-ligin-register-section'),
+	const popupLoginRegisterSection = document.querySelector('.popup-login-register-section'),
 	loginRegisterNav = document.querySelector('.login-register-nav'),
 	loginRegisterBtns = loginRegisterNav.querySelectorAll('button'),
 	loginRegisterContent = document.querySelector('.login-register-content'),
@@ -61,7 +61,7 @@ const account = () => {
 
 	popupLoginRegisterSection.addEventListener('click', (event) => {
 		const target =event.target;
-		if(target.matches('.popup-ligin-register-section')) {
+		if(target.matches('.popup-login-register-section')) {
 			popupLoginRegisterSection.classList.remove('show-popup');
 			document.removeEventListener('wheel', preventScroll);
 
