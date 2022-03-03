@@ -1,7 +1,7 @@
 'use strict';
 
 const account = () => {
-	const popupSection = document.querySelector('.popup-section'),
+	const popupLoginRegisterSection = document.querySelector('.popup-ligin-register-section'),
 	loginRegisterNav = document.querySelector('.login-register-nav'),
 	loginRegisterBtns = loginRegisterNav.querySelectorAll('button'),
 	loginRegisterContent = document.querySelector('.login-register-content'),
@@ -53,16 +53,16 @@ const account = () => {
 	signInLink.addEventListener('click', () => {
 		const signInLinkText = signInLink.textContent;
 		if(signInLinkText.toLowerCase() === 'sign in') {
-			popupSection.classList.add('show-popup');
+			popupLoginRegisterSection.classList.add('show-popup');
 			document.addEventListener('wheel', preventScroll, {passive: false});
 			renderUserData();
 		}
 	});
 
-	popupSection.addEventListener('click', (event) => {
+	popupLoginRegisterSection.addEventListener('click', (event) => {
 		const target =event.target;
-		if(target.matches('.popup-section')) {
-			popupSection.classList.remove('show-popup');
+		if(target.matches('.popup-ligin-register-section')) {
+			popupLoginRegisterSection.classList.remove('show-popup');
 			document.removeEventListener('wheel', preventScroll);
 
 			loginPassword.classList.remove('err-password');
@@ -115,7 +115,7 @@ const account = () => {
 		if ( passwordValue === repeatPasswordValue ) {
 			userPassword.classList.remove('err-password');
 			userPasswordRepeat.classList.remove('err-password');
-			popupSection.classList.remove('show-popup');
+			popupLoginRegisterSection.classList.remove('show-popup');
 			return true;
 		} else {
 			userPassword.classList.add('err-password');
@@ -150,7 +150,7 @@ const account = () => {
 				loginName.value = '';
 				loginPassword.value = '';
 
-				popupSection.classList.remove('show-popup');
+				popupLoginRegisterSection.classList.remove('show-popup');
 				loginPassword.classList.remove('err-password');
 				loginName.classList.remove('err-password');
 				accountList.classList.remove('no-account');

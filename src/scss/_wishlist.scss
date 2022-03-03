@@ -1,6 +1,7 @@
 .wishlist-section-title {
 	background-color: $dark-color;
 	color: #fff;
+
 	.section-title {
 		text-align: left;
 		padding: 25px 0;
@@ -12,9 +13,11 @@
 	width: 100%;
 	border-collapse: collapse;
 	margin-bottom: 100px;
+
 	.options-add-to-cart {
 		width: 100%;
 		max-width: 165px;
+
 		&:hover {
 			outline: 1px solid $dark-color;
 		}
@@ -54,4 +57,44 @@
 
 .button-cell {
 	text-align: right;
+}
+
+.add-to-whishlist-message-section {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 10;
+	background-color: $popupBackground;
+	transition: all .3s;
+}
+
+.show-wishlist-message {
+	@include flex;
+	justify-content: center;
+}
+
+.whishlist-message-block {
+	width: 250px;
+	padding: 10px;
+	border: 2px solid $accent-color;
+	border-radius: 2px;
+	background-color: $gray-light;
+	text-align: center;
+	font-weight: 600;
+	position: relative;
+}
+
+.whishlist-section-close-messege-btn {
+	position: absolute;
+	right: -35px;
+	top: -35px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 2px solid $accent-color;
+	padding-top: 5px;
 }

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-        <header class="main-header">
+    <header class="main-header">
             <div class="wrapper">
 
                 <div class="top-menu">
@@ -133,9 +133,8 @@
                         <div class="user-menu-container">
                             <a class="user-link account-link" href="#">JOIN FREE</a>
                             <ul class="account-list">
-                                <li class="account-list-item"><a class="account-list-link" href="#">My account</a></li>
                                 <li class="account-list-item"><a class="account-list-link" href="./wishlist.html">Wishlist</a></li>
-                                <li class="account-list-item"><a class="account-list-link" href="#">My Cart</a></li>
+                                <li class="account-list-item"><a class="account-list-link" href="./cart.html">My Cart</a></li>
                                 <li class="account-list-item"><a class="account-list-link" id="sign-out" href="#">Sign Out</a></li>
                             </ul>
                         </div>
@@ -245,10 +244,10 @@
                         </nav>
 
                         <div class="cart-block">
-                            <div class="cart-icon-block">
+                            <a class="cart-icon-block" href="./cart.html">
                                 <img class="cart-icon" src="./src/img/Cart.svg" alt="cart">
                                 <span class="cart-items">0</span>
-                            </div>
+                            </a>
 
                             <div class="cart-list-block">
                                 <ul class="cart-list">
@@ -352,9 +351,9 @@
                     </div>
                 </section>
 
-        </header>
+    </header>
 
-        <main class="main-content">
+    <main class="main-content">
             <div class="wrapper">
                 <div class="main-carousel">
                     <div class="swiper-container">
@@ -363,7 +362,7 @@
                                 <div class="slide-caption">
                                     <span class="caption-small-text">Summer</span>
                                     <h2 class="caption-title">Collections</h2>
-                                    <button class="caption-btn">Shop now
+                                    <button class="caption-btn" onclick="window.location.href='./shop.html'">Shop now
                                         <img src="./src/img/Arrow-carousel.svg" alt="arrow">
                                     </button>
                                 </div>  
@@ -374,7 +373,7 @@
                                 <div class="slide-caption">
                                     <span class="caption-small-text">Summer</span>
                                     <h2 class="caption-title">Collections</h2>
-                                    <button class="caption-btn">Shop now
+                                    <button class="caption-btn" onclick="window.location.href='./shop.html'">Shop now
                                         <img src="./src/img/Arrow-carousel.svg" alt="arrow">
                                     </button>
                                 </div>  
@@ -385,7 +384,7 @@
                                 <div class="slide-caption">
                                     <span class="caption-small-text">Summer</span>
                                     <h2 class="caption-title">Collections</h2>
-                                    <button class="caption-btn">Shop now
+                                    <button class="caption-btn" onclick="window.location.href='./shop.html'">Shop now
                                         <img src="./src/img/Arrow-carousel.svg" alt="arrow">
                                     </button>
                                 </div>  
@@ -3533,7 +3532,7 @@
 
             <section class="mobile-popup-cart-list"></section>
 
-            <section class="popup-section">
+            <section class="popup-ligin-register-section">
                 <div class="login-register-block">
                     <div class="login-register-nav">
                         <button class="login-register-btn active">Login</button>
@@ -3562,6 +3561,18 @@
                             </form>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="add-to-whishlist-message-section">
+                <div class="whishlist-message-block">
+                    <p class="wishlist-message">
+                        You have successfully added the item to your wishlist!
+                    </p>
+
+                    <button class="whishlist-section-close-messege-btn">
+                        <img src="./src/img/Close-dark-icon.png" alt="close">
+                    </button>
                 </div>
             </section>
 
@@ -3641,9 +3652,9 @@
                 </div>
             </section>
 
-        </main>
-            
-        <footer class="main-footer">
+    </main>
+        
+    <footer class="main-footer">
 
             <section class="popup-thanks-subscribe">
                 <div class="thanks-subscribe">
@@ -3728,7 +3739,7 @@
             </section>
 
             
-        </footer>
+    </footer>
 
 <script src="./dist/bundle.js"></script>
 </body>

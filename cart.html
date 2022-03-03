@@ -133,9 +133,8 @@
                         <div class="user-menu-container">
                             <a class="user-link account-link" href="#">JOIN FREE</a>
                             <ul class="account-list">
-                                <li class="account-list-item"><a class="account-list-link" href="#">My account</a></li>
                                 <li class="account-list-item"><a class="account-list-link" href="./wishlist.html">Wishlist</a></li>
-                                <li class="account-list-item"><a class="account-list-link" href="#">My Cart</a></li>
+                                <li class="account-list-item"><a class="account-list-link" href="./cart.html">My Cart</a></li>
                                 <li class="account-list-item"><a class="account-list-link" id="sign-out" href="#">Sign Out</a></li>
                             </ul>
                         </div>
@@ -245,10 +244,10 @@
                         </nav>
 
                         <div class="cart-block">
-                            <div class="cart-icon-block">
+                            <a class="cart-icon-block" href="./cart.html">
                                 <img class="cart-icon" src="./src/img/Cart.svg" alt="cart">
                                 <span class="cart-items">0</span>
-                            </div>
+                            </a>
 
                             <div class="cart-list-block">
                                 <ul class="cart-list">
@@ -443,7 +442,7 @@
                         <span class="cart-subtotal-name"> Cart subtotal </span>
                         <span class="cart-subtotal"> 
                             <span class="currency-icon">$</span> 
-						    <span class="cart-page-price price"> 520 </span> 
+						    <span class="cart-page-price price" id="starting-total-price"> 520 </span> 
                         </span>
                     </div>
 
@@ -451,7 +450,7 @@
                         <span class="cart-subtotal-name"> Shipping </span>
                         <span class="cart-subtotal"> 
                             <span class="currency-icon">$</span> 
-						    <span class="cart-page-price price"> 50 </span> 
+						    <span class="cart-page-price price" id="shipping-price"> 50 </span> 
                         </span>
                     </div>
                 </div>
@@ -461,7 +460,7 @@
                         <span class="grand-total-name"> Grand total </span>
                          <span class="grand-total"> 
                             <span class="currency-icon">$</span> 
-						    <span class="grand-total price"> 50 </span> 
+						    <span class="grand-total price" id="total-price"></span> </span> 
                          </span>
                     </div>
                     

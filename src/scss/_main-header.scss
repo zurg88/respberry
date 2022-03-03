@@ -29,6 +29,7 @@
 .left-menu-select {
 	position: absolute;
 	top: -9px;
+	z-index: 1;
 
 	.active {
 		display: block;

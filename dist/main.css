@@ -570,7 +570,8 @@ button {
 
 .left-menu-select {
   position: absolute;
-  top: -9px; }
+  top: -9px;
+  z-index: 1; }
   .left-menu-select .active {
     display: block;
     background-color: transparent;
@@ -1667,11 +1668,15 @@ button {
   height: 35px;
   background-color: #fff;
   margin-right: 1px;
-  transition: all .5s;
-  padding: 6px;
-  text-align: center; }
+  transition: all .5s; }
   .options-item-btn:hover {
     background-color: #ff0054; }
+  .options-item-btn .options-item-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 6px; }
 
 .tab-options-list:last-child {
   margin-right: 0; }
@@ -1967,7 +1972,46 @@ button {
 .button-cell {
   text-align: right; }
 
-.popup-section {
+.add-to-whishlist-message-section {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+  background-color: rgba(51, 51, 51, 0.5);
+  transition: all .3s; }
+
+.show-wishlist-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center; }
+
+.whishlist-message-block {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #ff0054;
+  border-radius: 2px;
+  background-color: #f3f3f3;
+  text-align: center;
+  font-weight: 600;
+  position: relative; }
+
+.whishlist-section-close-messege-btn {
+  position: absolute;
+  right: -35px;
+  top: -35px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #ff0054;
+  padding-top: 5px; }
+
+.popup-ligin-register-section {
   position: absolute;
   width: 100vw;
   height: 100vh;

@@ -1,14 +1,11 @@
 'use strict';
 
 const filters = ()=> {
-	const priceFilterBlock = document.querySelector('.price-filter-block'),
-		productList = document.querySelector('.product-list'),
+	const productList = document.querySelector('.product-list'),
 		leftSidebar = document.querySelector('.left-sidebar'),
 		productContent = document.querySelector('.product-content'),
 		mobileFilterButton  = document.querySelector('.mobile-filter-button'),
-		tableViewBtn = document.getElementById('table-view'),
 		sortingSelect = document.getElementById('sorting-select'),
-		listViewBtn = document.getElementById('list-view'),
 		viewBtnsArr = document.querySelectorAll('.grid-view'),
 		productCategoriesLink = document.querySelectorAll('.product-categories-link'),
 		productListItems = document.querySelectorAll('.product-list-item'),

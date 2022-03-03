@@ -9,6 +9,8 @@ const quickView = () => {
 			quickViewProductTitle = quickViewSection.querySelector('.product-title > a'),
 			quickViewPrice = quickViewSection.querySelector('.price'),
 			quickViewImage = quickViewImageBlock.querySelector('img'),
+			quickViewAddToCartBtn = quickViewImageBlock.querySelector('.quick-view-Btn'),
+			quickViewAddToWishlistBtn= quickViewImageBlock.querySelector('.add-to-wishlist'),
 			quickViewLink = document.querySelectorAll('.quick-view-link');
 
 		const createQuickViewInfo = (elemImg, elemPrice, elemTitle) => {
@@ -51,14 +53,17 @@ const quickView = () => {
 		quickViewSection.addEventListener('click', event => {
 			const target = event.target;
 
-			if (target.matches('.quick-view-section') || target.closest('.close-section-btn')) {
+			if (target.matches('.quick-view-section') || 
+				target.closest('.close-section-btn') ||
+				target.closest('.quick-view-Btn') ||
+				target.closest('.add-to-wishlist') 
+				) {
 				quickViewSection.classList.remove('show-quick-view');
 			document.removeEventListener('wheel', preventScroll);
 			}
 
 		});
-	}
-		
+	};
 };
 
 export default quickView;

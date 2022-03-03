@@ -23,6 +23,8 @@ const wishlist = () => {
 		wishlistCartListBlock = wishlistBlock.querySelector('.cart-list-block'),
 		wishlistCartList = wishlistBlock.querySelector('.cart-list'),
 		quickViewSection = document.querySelector('.quick-view-section'),
+		whishlistmessageSection = document.querySelector('.add-to-whishlist-message-section'),
+		whishlistSectionCloseMessegeBtn = document.querySelector('.whishlist-section-close-messege-btn'),
 		wishTable = document.querySelector('.wish-table');
 
 	const showWishListCartItems = () => {
@@ -31,6 +33,29 @@ const wishlist = () => {
 			userMenuAnimation(wishlistBlock, wishlistCartItems, 25);
 		}
 	};
+
+	const showWishlistMessage = () => {
+		whishlistmessageSection.classList.add('show-wishlist-message');
+	};
+
+	const removeWishlistMassage = () => {
+		whishlistmessageSection.classList.remove('show-wishlist-message');
+	};
+
+	whishlistmessageSection.addEventListener('click', event => {
+			const target = event.target;
+
+			if(whishlistmessageSection.classList.contains('show-wishlist-message')) {
+			
+				if(target.matches('.show-wishlist-message')) {
+					removeWishlistMassage();
+				}
+			};
+		});
+
+	whishlistSectionCloseMessegeBtn.addEventListener('click', () => {
+		removeWishlistMassage();
+	});
 
 	const createMessageForWishTable = () => {
 		if( JSON.parse(sessionStorage.wishlistData).length === 0 && document.body.classList.contains('wishlist-body')) {
@@ -92,7 +117,7 @@ const wishlist = () => {
 		}
 		
 		if (window.matchMedia("(min-width: 1025px)").matches) {
-			if (document.body.classList.contains('shop-page')) {
+			if (document.body.classList.contains('shop-page') && !quickViewSection.classList.contains('show-quick-view')) {
 				cteateCartItem(...getParams(item, '.product-list-item'), wishlistCartList);
 			} else if(quickViewSection.classList.contains('show-quick-view')) {
 				cteateCartItem(...getParams(item, '.quick-view-block'), wishlistCartList);
@@ -115,7 +140,11 @@ const wishlist = () => {
 
 		const wishlistCartItems = wishlistBlock.querySelectorAll('.cart-list-item');
 		addDataToStorege(wishlistCartItems, '.cart-description-title', '.cart-item-img > img', 'wishlistData');
+
+		showWishlistMessage();
 	};
+
+	
 
 	addToWishlistBtn.forEach(item => {
 		item.addEventListener('click', (event) => {
