@@ -63,17 +63,17 @@ const filters = ()=> {
 	};
 
 	const categoriesTagsFilter = (filterСriteria)=> {
-		filterСriteria.forEach(item => {
-			
-			item.addEventListener('click', (event) => {
-				event.preventDefault();
-				const itemContent = item.textContent;
-				console.log(itemContent.toLowerCase());
-				findCategoryItems(itemContent.toLowerCase());
+		if(document.body.classList.contains('shop-page')){
+			filterСriteria.forEach(item => {
+				item.addEventListener('click', (event) => {
+					event.preventDefault();
+					const itemContent = item.textContent;
+					console.log(itemContent.toLowerCase());
+					findCategoryItems(itemContent.toLowerCase());
+				});
 			});
-		});
-
-		showQuantityVisibleProducts();
+			showQuantityVisibleProducts();
+		}
 	};
 
 	categoriesTagsFilter(productCategoriesLink);

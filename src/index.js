@@ -20,6 +20,7 @@ import filters from './modules/shop-filters';
 import quickView from './modules/quick-view';
 import createCommentForm from './modules/comment-form';
 import vartPage from './modules/cart-page';
+import menuActiveLink from './modules/menu';
 
 import noUiSlider from 'nouislider';
 
@@ -46,6 +47,10 @@ if(rangeSlider) {
 }
 
 
+
+// Menu Active Link
+
+menuActiveLink();
 
 // Animations
 projectAnimations();

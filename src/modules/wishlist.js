@@ -122,7 +122,7 @@ const wishlist = () => {
 		}
 		
 		if (window.matchMedia("(min-width: 1025px)").matches) {
-			if (document.body.classList.contains('shop-page') && !quickViewSection.classList.contains('show-quick-view')) {
+			if (document.body.classList.contains('shop-page')) {
 				cteateCartItem(...getParams(item, '.product-list-item'), wishlistCartList);
 			} else if(quickViewSection.classList.contains('show-quick-view')) {
 				cteateCartItem(...getParams(item, '.quick-view-block'), wishlistCartList);
@@ -131,12 +131,15 @@ const wishlist = () => {
 			}
 		}
 		
-		if (window.matchMedia("(max-width: 1024px)").matches) {
-			try {
-				cteateCartItem(...getParams(item, '.swiper-slide'), wishlistCartList);
-			} catch (e) {
-				cteateCartItem(...getParams(item, '.quick-view-block'), wishlistCartList);
-			}
+		if (window.matchMedia("(max-width: 1024px)").matches && !document.body.classList.contains('shop-page') ) {
+			cteateCartItem(...getParams(item, '.swiper-slide'), wishlistCartList);
+			// try {
+			// 	cteateCartItem(...getParams(item, '.swiper-slide'), wishlistCartList);
+			// } catch (e) {
+			// 	cteateCartItem(...getParams(item, '.quick-view-block'), wishlistCartList);
+			// }
+		} else {
+			cteateCartItem(...getParams(item, '.product-list-item'), wishlistCartList);
 		}
 
 		showWishListCartItems();
