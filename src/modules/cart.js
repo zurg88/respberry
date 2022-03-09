@@ -191,7 +191,6 @@ const cart = () => {
 
 		const cartListItems = cartBlock.querySelectorAll('.cart-list-item');
 		addDataToStorege(cartListItems, '.cart-description-title', '.cart-item-img > img', 'cartData');
-		console.log(cartListItems);
 		getcartItemsValue();
 		removeCartItem();
 		cartTotalPrice();

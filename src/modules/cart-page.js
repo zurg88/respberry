@@ -1,9 +1,14 @@
-const vartPage = () => {
+import {removeStorageItem} from './localStorege';
+
+const cartPage = () => {
 	const	cartTable = document.querySelector('.cart-table'),
 		cartTableRows = document.querySelectorAll('.cart-table .table-row'),
 		currencySelect = document.getElementById('currency-select'),
 		currencySelectActive = currencySelect.querySelector('.active'),
 		startingTotalPrice = document.getElementById('starting-total-price'),
+		cartBlock = document.querySelector('.cart-block'),
+		cartList = cartBlock.querySelector('.cart-list'),
+		cartListItems = cartBlock.querySelectorAll('.cart-list-item'),
 		shippingPrice = document.getElementById('shipping-price'),
 		totalPrice = document.getElementById('total-price');
 
@@ -37,8 +42,21 @@ const vartPage = () => {
 		minusBtn.removeAttribute('disabled');
 	};
 
+	const findIndexAtCollection = (collection, collectionItem) => {
+		let indexItem = 0;
+		collection.forEach((elem, index) => {
+			if(collectionItem == elem) {
+				indexItem = index;
+			}
+		})
+		return indexItem;
+	};
+
 	const closeCartTablerow = (elem) => {
 		const parentRow = elem.closest('.table-row');
+		const rows = document.querySelectorAll('.table-row');
+		const tableRowIndex = findIndexAtCollection(rows, parentRow);
+		removeStorageItem(tableRowIndex, 'cartData');
 		parentRow.remove();
 	};
 
@@ -191,4 +209,4 @@ const vartPage = () => {
 
 }
 
-export default vartPage;
+export default cartPage;

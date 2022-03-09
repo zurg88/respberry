@@ -390,19 +390,7 @@
 	}
 
 	.cart-list-block {
-		min-width: 320px;
-	}
-
-	.cart-list-block {
-		position: fixed;
-		bottom: 9vh;
-		width: 100%;
-		z-index: 50;
-		background-color: #333;
-		top: 7vh;
-		height: 85vh;
-		flex-direction: column;
-		overflow: scroll;
+		display: none;
 	}
 
 	.wish-table .product-img {
